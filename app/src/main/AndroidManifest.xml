@@ -9,45 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".screen.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".screen.welcome.WelcomeActivity" />
+
+        <activity android:name=".screen.home.HomeActivity" />
+
+        <activity android:name=".screen.categories.CategoriesActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".screen.welcome.WelcomeActivity" />
-        <activity android:name=".screen.home.HomeActivity" />
-        <activity android:name=".screen.nature.NatureActivity" />
-        <activity android:name=".screen.animal.AnimalActivity" />
-        <activity android:name=".screen.natureFlowers.NatureFlowersActivity" />
-        <activity
-            android:name=".screen.natureHerbs.NatureHerbsActivity"
-            android:label="@string/title_activity_nature_herbs"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".screen.animalMammals.AnimalMammalsActivity" />
-        <activity android:name=".screen.animalSmallBirds.AnimalSmallBirdsActivity" />
-        <activity android:name=".screen.flag.FlagActivity" />
-        <activity android:name=".screen.capitalCity.CapitalCityActivity" />
-        <activity android:name=".screen.flagAfrica.FlagAfricaActivity" />
-        <activity android:name=".screen.flagAsia.FlagAsiaActivity" />
-        <activity android:name=".screen.flagEurope.FlagEuropeActivity" />
-        <activity android:name=".screen.flagNorthAmerica.FlagNorthAmericaActivity" />
-        <activity android:name=".screen.flagSouthAmerica.FlagSouthAmericaActivity" />
-        <activity android:name=".screen.flagOceania.FlagOceaniaActivity" />
-        <activity android:name=".screen.capitalCityAfrica.CapitalCityAfricaActivity" />
-        <activity android:name=".screen.capitalCityAsia.CapitalCityAsiaActivity" />
-        <activity android:name=".screen.capitalCityEurope.CapitalCityEuropeActivity" />
-        <activity android:name=".screen.capitalCityNorthAmerica.CapitalCityNorthAmericaActivity" />
-        <activity android:name=".screen.capitalCitySouthAmerica.CapitalCitySouthAmericaActivity" />
-        <activity android:name=".screen.capitalCityOceania.CapitalCityOceaniaActivity" />
-        <activity android:name=".screen.endOfGame.EndOfGameActivity" />
-        <activity android:name=".screen.mathematics.MathematicsActivity" />
-        <activity android:name=".screen.mathematics57.Mathematics57Activity" />
-        <activity android:name=".screen.mathematics79.Mathematics79Activity" />
-        <activity android:name=".screen.wordAndPicture.WordAndPictureActivity" />
-        <activity android:name=".screen.wordToPicture.WordToPictureActivity" />
-        <activity android:name=".screen.pictureToWord.PictureToWordActivity"></activity>
+
+        <activity android:name=".screen.endofgame.EndOfGameActivity" />
+
     </application>
 
 </manifest>

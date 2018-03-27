@@ -1,7 +1,7 @@
-package com.videlilja.linda.lia.screen.endOfGame;
+package com.videlilja.linda.lia.screen.endofgame;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.videlilja.linda.lia.R;
 

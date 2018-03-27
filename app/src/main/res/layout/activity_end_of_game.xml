@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.videlilja.linda.lia.screen.endOfGame.EndOfGameActivity">
+    tools:context="com.videlilja.linda.lia.screen.endofgame.EndOfGameActivity">
 
 </android.support.constraint.ConstraintLayout>
