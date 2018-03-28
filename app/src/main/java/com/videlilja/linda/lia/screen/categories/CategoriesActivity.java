@@ -19,7 +19,7 @@ public class CategoriesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flag);
+        setContentView(R.layout.activity_category);
         CategoryViewModel viewModel = ViewModelProviders.of(this).get(CategoryViewModel.class);
         final CategoryAdapter adapter = new CategoryAdapter(new OnCategoryClickedListener() {
             @Override

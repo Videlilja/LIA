@@ -34,7 +34,7 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder {
                                                  OnCategoryClickedListener listener) {
         return new CategoryViewHolder(
                 LayoutInflater.from(parent.getContext()).inflate(
-                        R.layout.flag_item,
+                        R.layout.category_item,
                         parent,
                         false
                 ),
