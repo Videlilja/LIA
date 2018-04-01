@@ -26,7 +26,7 @@ public class Continent {
         List<Continent> continents = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
-            Continent continent = new Continent("Europa");
+            Continent continent = new Continent("Europa" + i);
         }
 
         return continents;

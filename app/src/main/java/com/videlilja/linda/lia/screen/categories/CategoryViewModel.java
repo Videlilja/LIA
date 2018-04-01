@@ -21,7 +21,7 @@ public class CategoryViewModel extends ViewModel {
         // fyll en lista med 6 strängar från klassen Continent.
         List<Category> data = new ArrayList<>();
         for (int i = 0; i < 6; ++i) {
-            data.add(new Category("Europa"));
+            data.add(new Category("Europa" + i));
         }
         mData.setValue(data);
     }
