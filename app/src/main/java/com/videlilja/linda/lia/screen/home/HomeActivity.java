@@ -3,6 +3,7 @@ package com.videlilja.linda.lia.screen.home;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,8 @@ import android.util.Log;
 
 import com.videlilja.linda.lia.R;
 import com.videlilja.linda.lia.model.Home;
+import com.videlilja.linda.lia.screen.categories.CategoriesActivity;
+import com.videlilja.linda.lia.screen.welcome.WelcomeActivity;
 
 import java.util.List;
 
@@ -27,6 +30,8 @@ public class HomeActivity extends AppCompatActivity {
         final HomeAdapter adapter = new HomeAdapter(new OnHomeClickedListener() {
             @Override
             public void onHomeClicked(final Home entity) {
+                Intent intent = new Intent(HomeActivity.this, CategoriesActivity.class);
+                startActivity(intent);
                 Log.i("TAG", "You clicked on " + entity.getLabel());
             }
         });
