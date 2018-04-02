@@ -1,5 +1,7 @@
 package com.videlilja.linda.lia.model;
 
+import com.videlilja.linda.lia.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,10 +20,10 @@ public class Home {
         return mLabel;
     }
 
-    public List<Home> getHomes() {
-        List<Home> homes = new ArrayList<>();
-        //homes.add()
+    public List<Home> getGames() {
+        List<Home> games = new ArrayList<>();
+        //games.add(R.string.animals).toString;
 
-        return homes;
+        return games;
     }
 }

@@ -8,7 +8,7 @@
         android:id="@+id/category_label"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/mauritius"
+        android:background="@drawable/smiley"
         android:text="@string/category_text"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"

@@ -3,4 +3,11 @@
     <string name="title_activity_nature_herbs">NatureHerbsActivity</string>
     <string name="home_text">Home Text</string>
     <string name="category_text">Category Text</string>
+    <string name="animals">Animals</string>
+    <string name="nature">Nature</string>
+    <string name="flags">Flags</string>
+    <string name="capitals">Capitals</string>
+    <string name="math">Math</string>
+    <string name="words">Words</string>
+    <string name="animals">Animals</string>
 </resources>

@@ -23,8 +23,6 @@ public class Category {
         List<Category> categories = new ArrayList<>();
         //categories.add()
 
-
-
         return categories;
     }
 }
