@@ -11,6 +11,7 @@ import android.util.Log;
 
 import com.videlilja.linda.lia.R;
 import com.videlilja.linda.lia.model.Category;
+import com.videlilja.linda.lia.model.Home;
 
 import java.util.List;
 
@@ -20,10 +21,12 @@ public class CategoriesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
+
         CategoryViewModel viewModel = ViewModelProviders.of(this).get(CategoryViewModel.class);
         final CategoryAdapter adapter = new CategoryAdapter(new OnCategoryClickedListener() {
             @Override
-            public void onCategoryClicked(final Category entity) {
+            public void onCategoryClicked(Category entity) {
                 Log.i("TAG", "You clicked on " + entity.getLabel());
             }
         });

@@ -18,7 +18,7 @@ public class CategoryViewModel extends ViewModel {
     private final MutableLiveData<List<Category>> mData = new MutableLiveData<>();
 
     public CategoryViewModel() {
-        // fyll en lista med 6 strängar från klassen Continent.
+        // fyll en lista med 6 strängar från klassen Category.
         List<Category> data = new ArrayList<>();
         for (int i = 0; i < 6; ++i) {
             data.add(new Category("Europa" + i));

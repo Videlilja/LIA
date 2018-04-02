@@ -18,7 +18,7 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder {
     private Category mEntity;
     public CategoryViewHolder(View itemView, final OnCategoryClickedListener listener) {
         super(itemView);
-        mLabel = itemView.findViewById(R.id.category_lable);
+        mLabel = itemView.findViewById(R.id.category_label);
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
