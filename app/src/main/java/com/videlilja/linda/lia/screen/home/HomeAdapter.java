@@ -3,7 +3,7 @@ package com.videlilja.linda.lia.screen.home;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
-import com.videlilja.linda.lia.model.Home;
+import com.videlilja.linda.lia.model.Game;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,12 +13,12 @@ import java.util.List;
  */
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder>{
-    private List<Home> mData = new ArrayList<>();
+    private List<Game> mData = new ArrayList<>();
     private OnHomeClickedListener mEntityClickListener;
     public HomeAdapter(OnHomeClickedListener entityClickListener) {
         mEntityClickListener = entityClickListener;
     }
-    public void setData(final List<Home> data) {
+    public void setData(final List<Game> data) {
         mData = data;
         notifyDataSetChanged();
     }

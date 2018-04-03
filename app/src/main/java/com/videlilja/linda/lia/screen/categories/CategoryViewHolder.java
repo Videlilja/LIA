@@ -28,7 +28,7 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder {
     }
     public void bind(Category entity) {
         mEntity = entity;
-        mLabel.setText(entity.getLabel());
+        mLabel.setText(entity.getmTitle());
     }
     public static CategoryViewHolder newInstance(final ViewGroup parent,
                                                  OnCategoryClickedListener listener) {

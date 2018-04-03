@@ -9,20 +9,23 @@ import java.util.List;
 
 public class Category {
 
-    private final String mLabel;
+    private final String mTitle;
+    private Categories mAction;
 
-    public Category(final String label) {
-        mLabel = label;
+    public Category(String mTitle, Categories mAction) {
+        this.mTitle = mTitle;
+        this.mAction = mAction;
     }
 
-    public String getLabel() {
-        return mLabel;
+    public String getmTitle() {
+        return mTitle;
     }
 
-    public List<Category> getCategories() {
-        List<Category> categories = new ArrayList<>();
-        //categories.add()
+    public Categories getmAction() {
+        return mAction;
+    }
 
-        return categories;
+    public void setmAction(Categories mAction) {
+        this.mAction = mAction;
     }
 }

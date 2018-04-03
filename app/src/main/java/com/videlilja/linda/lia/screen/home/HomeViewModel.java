@@ -4,7 +4,8 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import com.videlilja.linda.lia.model.Home;
+import com.videlilja.linda.lia.model.Game;
+import com.videlilja.linda.lia.model.GameLiveData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,16 +15,14 @@ import java.util.List;
  */
 
 public class HomeViewModel extends ViewModel{
-    private final MutableLiveData<List<Home>> mData = new MutableLiveData<>();
+
+    private final LiveData<List<Game>> mGames = new GameLiveData();
 
     public HomeViewModel() {
-        // fyll en lista med 6 strängar från klassen Home.
-        List<Home> data = new ArrayList<>();
-        for (int i = 0; i < 6; ++i) {
-            data.add(new Home("Djur" + i));
-        }
-        mData.setValue(data);
+
     }
-    public LiveData<List<Home>> getEntities() {
-        return mData; }
+
+    public LiveData<List<Game>> getGames() {
+        return mGames;
+    }
 }

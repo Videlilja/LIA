@@ -1,6 +1,5 @@
 package com.videlilja.linda.lia.screen.home;
 
-import android.content.Entity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.videlilja.linda.lia.R;
-import com.videlilja.linda.lia.model.Home;
+import com.videlilja.linda.lia.model.Game;
 
 /**
  * Created by ilisa on 2018-03-27.
@@ -16,7 +15,7 @@ import com.videlilja.linda.lia.model.Home;
 
 public class HomeViewHolder extends RecyclerView.ViewHolder {
     private TextView mLabel;
-    private Home mEntity;
+    private Game mEntity;
     public HomeViewHolder(View itemView, final OnHomeClickedListener listener) {
         super(itemView);
         mLabel = itemView.findViewById(R.id.home_label);
@@ -27,9 +26,10 @@ public class HomeViewHolder extends RecyclerView.ViewHolder {
             }
         });
     }
-    public void bind(Home entity) {
+    public void bind(Game entity) {
         mEntity = entity;
-        mLabel.setText(entity.getLabel());
+        mLabel.setText(entity.getmTitle());
+        //mImageView.setimageresource(entity.getImage);
     }
     public static HomeViewHolder newInstance(final ViewGroup parent,
                                              OnHomeClickedListener listener) {

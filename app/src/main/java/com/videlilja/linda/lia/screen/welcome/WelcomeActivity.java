@@ -30,6 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
     }
+
     public static void start(Context context){
         context.startActivity(new Intent(context, WelcomeActivity.class));
     }

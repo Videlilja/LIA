@@ -12,9 +12,8 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.videlilja.linda.lia.R;
-import com.videlilja.linda.lia.model.Home;
+import com.videlilja.linda.lia.model.Game;
 import com.videlilja.linda.lia.screen.categories.CategoriesActivity;
-import com.videlilja.linda.lia.screen.welcome.WelcomeActivity;
 
 import java.util.List;
 
@@ -29,19 +28,18 @@ public class HomeActivity extends AppCompatActivity {
         HomeViewModel viewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         final HomeAdapter adapter = new HomeAdapter(new OnHomeClickedListener() {
             @Override
-            public void onHomeClicked(final Home entity) {
-                Intent intent = new Intent(HomeActivity.this, CategoriesActivity.class);
-                startActivity(intent);
-                Log.i("TAG", "You clicked on " + entity.getLabel());
+            public void onHomeClicked(final Game entity) {
+                CategoriesActivity.start(getApplicationContext(), entity.getmAction());
             }
         });
 
-        viewModel.getEntities().observe(this, new Observer<List<Home>>() {
+        viewModel.getGames().observe(this, new Observer<List<Game>>() {
             @Override
-            public void onChanged(@Nullable List<Home> homes) {
+            public void onChanged(@Nullable List<Game> homes) {
                 adapter.setData(homes);
             }
         });
+
         RecyclerView recyclerView = findViewById(R.id.home_recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);

@@ -2,6 +2,8 @@ package com.videlilja.linda.lia.screen.categories;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +13,8 @@ import android.util.Log;
 
 import com.videlilja.linda.lia.R;
 import com.videlilja.linda.lia.model.Category;
-import com.videlilja.linda.lia.model.Home;
+import com.videlilja.linda.lia.model.Game;
+import com.videlilja.linda.lia.model.Games;
 
 import java.util.List;
 
@@ -22,14 +25,17 @@ public class CategoriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
-
         CategoryViewModel viewModel = ViewModelProviders.of(this).get(CategoryViewModel.class);
+        Games action = (Games) getIntent().getSerializableExtra("game");
+        viewModel.setmData(action);
+
         final CategoryAdapter adapter = new CategoryAdapter(new OnCategoryClickedListener() {
             @Override
             public void onCategoryClicked(Category entity) {
-                Log.i("TAG", "You clicked on " + entity.getLabel());
+                Log.i("TAG", "You clicked on " + entity.getmTitle());
             }
         });
+
         viewModel.getEntities().observe(this, new Observer<List<Category>>() {
             @Override
             public void onChanged(@Nullable final List<Category> strings) {
@@ -40,4 +46,11 @@ public class CategoriesActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);
     }
+
+    public static void start(Context context, Games action){
+        Intent intent = new Intent(context, CategoriesActivity.class);
+        intent.putExtra("game", action);
+        context.startActivity(intent);
+    }
+
 }

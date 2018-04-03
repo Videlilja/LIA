@@ -1,10 +1,18 @@
 package com.videlilja.linda.lia.screen.categories;
 
+import android.app.Application;
+import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
+import android.support.annotation.NonNull;
+import android.widget.Switch;
+import android.widget.Toast;
 
+import com.videlilja.linda.lia.model.CategoriesLiveData;
 import com.videlilja.linda.lia.model.Category;
+import com.videlilja.linda.lia.model.Game;
+import com.videlilja.linda.lia.model.Games;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,17 +23,15 @@ import java.util.List;
 
 public class CategoryViewModel extends ViewModel {
 
-    private final MutableLiveData<List<Category>> mData = new MutableLiveData<>();
+    private CategoriesLiveData mData = null;
 
-    public CategoryViewModel() {
-        // fyll en lista med 6 strängar från klassen Category.
-        List<Category> data = new ArrayList<>();
-        for (int i = 0; i < 6; ++i) {
-            data.add(new Category("Europa" + i));
-        }
-        mData.setValue(data);
+
+    public void setmData(Games game) {
+        mData = new CategoriesLiveData(game);
     }
+
     public LiveData<List<Category>> getEntities() {
         return mData;
     }
+
 }
