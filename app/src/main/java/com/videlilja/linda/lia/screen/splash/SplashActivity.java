@@ -2,6 +2,7 @@ package com.videlilja.linda.lia.screen.splash;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.videlilja.linda.lia.R;
 import com.videlilja.linda.lia.screen.home.HomeActivity;
