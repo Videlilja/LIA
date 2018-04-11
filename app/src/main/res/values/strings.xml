@@ -1,12 +1,39 @@
 <resources>
-    <string name="app_name">Lia</string>
-    <string name="title_activity_nature_herbs">NatureHerbsActivity</string>
+    <string name="app_name">Kul Kunskap</string>
+    <string name="start_games_text">Start Games</string>
+    <string name="title_activity_nature_herbs">Herbs</string>
+    <string name="headerText">Header Text</string>
     <string name="home_text">Home Text</string>
     <string name="category_text">Category Text</string>
+
+    <string name="mammals">Mammals</string>
+    <string name="insects">Insects</string>
+
+    <string name="flowers">Flowers</string>
+    <string name="herbs">Herbs</string>
+
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+    <string name="geometry">Geometry</string>
+
+    <string name="africa">Africa</string>
+    <string name="asia">Asia</string>
+    <string name="oceania">Oceania</string>
+    <string name="south_america">South America</string>
+    <string name="north_america">North America</string>
+    <string name="europe">Europe</string>
+
+    <string name="pic_to_word">Picture to word</string>
+    <string name="word_to_pic">Word to picture</string>
+    <string name="spelling">Spelling</string>
+
     <string name="animals">Animals</string>
     <string name="nature">Nature</string>
     <string name="flags">Flags</string>
     <string name="capitals">Capitals</string>
     <string name="math">Math</string>
     <string name="words">Words</string>
+
 </resources>

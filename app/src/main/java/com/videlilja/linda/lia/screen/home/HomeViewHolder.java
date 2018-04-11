@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.videlilja.linda.lia.R;
@@ -16,9 +17,13 @@ import com.videlilja.linda.lia.model.Game;
 public class HomeViewHolder extends RecyclerView.ViewHolder {
     private TextView mLabel;
     private Game mEntity;
+    private ImageView mImage;
+
     public HomeViewHolder(View itemView, final OnHomeClickedListener listener) {
         super(itemView);
         mLabel = itemView.findViewById(R.id.home_label);
+        mImage = itemView.findViewById(R.id.home_image_view);
+
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
@@ -29,7 +34,7 @@ public class HomeViewHolder extends RecyclerView.ViewHolder {
     public void bind(Game entity) {
         mEntity = entity;
         mLabel.setText(entity.getmTitle());
-        //mImageView.setimageresource(entity.getImage);
+        mImage.setImageResource(entity.getmImage());
     }
     public static HomeViewHolder newInstance(final ViewGroup parent,
                                              OnHomeClickedListener listener) {

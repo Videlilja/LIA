@@ -1,30 +1,26 @@
 package com.videlilja.linda.lia.model;
 
-import com.videlilja.linda.lia.R;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 /**
  * Created by ilisa on 2018-04-02.
  */
 
 public class Game{
 
-    private String mTitle;
+    private int mTitle;
     private Games mAction;
+    private int mImage;
 
-    public Game(String mTitle, Games mAction) {
+    public Game(int mTitle, Games mAction, int mImage) {
         this.mTitle = mTitle;
         this.mAction = mAction;
+        this.mImage = mImage;
     }
 
-    public String getmTitle() {
+    public int getmTitle() {
         return mTitle;
     }
 
-    public void setmTitle(String mTitle) {
+    public void setmTitle(int mTitle) {
         this.mTitle = mTitle;
     }
 
@@ -35,4 +31,10 @@ public class Game{
     public void setmAction(Games mAction) {
         this.mAction = mAction;
     }
+
+    public int getmImage() {
+        return mImage;
+    }
+
+    public void setmImage(int mImage) { this.mImage = mImage; }
 }

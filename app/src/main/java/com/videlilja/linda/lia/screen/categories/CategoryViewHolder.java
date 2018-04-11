@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.videlilja.linda.lia.R;
@@ -16,9 +17,13 @@ import com.videlilja.linda.lia.model.Category;
 public class CategoryViewHolder extends RecyclerView.ViewHolder {
     private TextView mLabel;
     private Category mEntity;
+    private ImageView mImage;
+
     public CategoryViewHolder(View itemView, final OnCategoryClickedListener listener) {
         super(itemView);
         mLabel = itemView.findViewById(R.id.category_label);
+        mImage = itemView.findViewById(R.id.category_image_view);
+
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
@@ -29,6 +34,8 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder {
     public void bind(Category entity) {
         mEntity = entity;
         mLabel.setText(entity.getmTitle());
+        mImage.setImageResource(entity.getmImage());
+
     }
     public static CategoryViewHolder newInstance(final ViewGroup parent,
                                                  OnCategoryClickedListener listener) {
