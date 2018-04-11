@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Lia</string>
+    <string name="app_name">Kul Kunskap</string>
+    <string name="start_games_text">Start Games</string>
     <string name="title_activity_nature_herbs">NatureHerbsActivity</string>
     <string name="home_text">Home Text</string>
     <string name="category_text">Category Text</string>
