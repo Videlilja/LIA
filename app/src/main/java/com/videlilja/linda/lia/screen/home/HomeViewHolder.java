@@ -17,11 +17,12 @@ import com.videlilja.linda.lia.model.Game;
 public class HomeViewHolder extends RecyclerView.ViewHolder {
     private TextView mLabel;
     private Game mEntity;
-    private ImageView mImageView;
+    private ImageView mImage;
 
     public HomeViewHolder(View itemView, final OnHomeClickedListener listener) {
         super(itemView);
         mLabel = itemView.findViewById(R.id.home_label);
+        mImage = itemView.findViewById(R.id.home_image_view);
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,8 +34,7 @@ public class HomeViewHolder extends RecyclerView.ViewHolder {
     public void bind(Game entity) {
         mEntity = entity;
         mLabel.setText(entity.getmTitle());
-        //mImageView.setImageResource(entity.getmImageView);  MIN
-        //mImageView.setimageresource(entity.getImage);
+        mImage.setImageResource(entity.getmImage());
     }
     public static HomeViewHolder newInstance(final ViewGroup parent,
                                              OnHomeClickedListener listener) {

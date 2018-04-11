@@ -13,11 +13,11 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
         switch (game) {
             case MATH:
                 List<Category> mathCategories = new ArrayList<>();
-                mathCategories.add(new Category("Addition", Categories.ADDITION, R.drawable.smiley));
-                mathCategories.add(new Category("Subtraktion", Categories.SUBTRACTION, R.drawable.smiley));
-                mathCategories.add(new Category("Multiplikation", Categories.MULTIPLICATION, R.drawable.smiley));
-                mathCategories.add(new Category("Division", Categories.DIVISION, R.drawable.smiley));
-                mathCategories.add(new Category("Geometri", Categories.GEOMETRY, R.drawable.smiley));
+                mathCategories.add(new Category("Addition", Categories.ADDITION, R.drawable.pinkwave));
+                mathCategories.add(new Category("Subtraktion", Categories.SUBTRACTION, R.drawable.sandwave));
+                mathCategories.add(new Category("Multiplikation", Categories.MULTIPLICATION, R.drawable.pinkwave));
+                mathCategories.add(new Category("Division", Categories.DIVISION, R.drawable.sandwave));
+                mathCategories.add(new Category("Geometri", Categories.GEOMETRY, R.drawable.splash));
                 setValue(mathCategories);
                 break;
             case FLAGS:

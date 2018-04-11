@@ -18,10 +18,12 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder {
     private TextView mLabel;
     private Category mEntity;
     private ImageView mImage;
+
     public CategoryViewHolder(View itemView, final OnCategoryClickedListener listener) {
         super(itemView);
         mLabel = itemView.findViewById(R.id.category_label);
         mImage = itemView.findViewById(R.id.category_image_view);
+
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
