@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorLjusGrå"
+
     android:layout_margin="8dp">
 
     <ImageView
@@ -33,7 +33,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="@string/category_text"
+        android:text="@string/home_text"
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
         android:textSize="24sp"

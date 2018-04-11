@@ -8,12 +8,12 @@ import java.util.List;
 public class GameRepository {
 
     public List<Game> getGames() {
-        Game animals = new Game("Djur", Games.ANIMALS, R.drawable.smiley);
-        Game nature = new Game("Natur", Games.NATURE, R.drawable.smiley);
-        Game math = new Game("Matte", Games.MATH, R.drawable.smiley);
-        Game flags = new Game("Flaggor", Games.FLAGS, R.drawable.smiley);
-        Game capitals = new Game("Huvudstäder", Games.CAPITALS, R.drawable.smiley);
-        Game words = new Game("Ordkunskap", Games.WORDS, R.drawable.smiley);
+        Game animals = new Game(R.string.animals, Games.ANIMALS, R.drawable.smiley);
+        Game nature = new Game(R.string.nature, Games.NATURE, R.drawable.smiley);
+        Game math = new Game(R.string.math, Games.MATH, R.drawable.smiley);
+        Game flags = new Game(R.string.flags, Games.FLAGS, R.drawable.smiley);
+        Game capitals = new Game(R.string.capitals, Games.CAPITALS, R.drawable.smiley);
+        Game words = new Game(R.string.words, Games.WORDS, R.drawable.smiley);
 
         List<Game> games = new ArrayList<>();
         games.add(animals);

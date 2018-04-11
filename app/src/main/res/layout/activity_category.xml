@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pinkwave"
     tools:context="com.videlilja.linda.lia.screen.categories.CategoriesActivity">
 
     <android.support.v7.widget.RecyclerView
@@ -25,7 +26,7 @@
         android:layout_marginStart="8dp"
         android:gravity="center"
         android:textAlignment="center"
-        android:text="@string/headerText"
+        android:text="@string/category_text"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
