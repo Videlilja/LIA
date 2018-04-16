@@ -13,8 +13,8 @@ import android.util.Log;
 
 import com.videlilja.linda.lia.R;
 import com.videlilja.linda.lia.model.Category;
-import com.videlilja.linda.lia.model.Game;
 import com.videlilja.linda.lia.model.Games;
+import com.videlilja.linda.lia.screen.quiz.QuizActivity;
 
 import java.util.List;
 
@@ -32,6 +32,8 @@ public class CategoriesActivity extends AppCompatActivity {
         final CategoryAdapter adapter = new CategoryAdapter(new OnCategoryClickedListener() {
             @Override
             public void onCategoryClicked(Category entity) {
+                QuizActivity.start(getApplicationContext(), entity.getmAction());
+
                 Log.i("TAG", "You clicked on " + entity.getmTitle());
             }
         });
