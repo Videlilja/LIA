@@ -5,6 +5,8 @@
     <string name="headerText">Header Text</string>
     <string name="home_text">Home Text</string>
     <string name="category_text">Category Text</string>
+    <string name="quiz_text">Quiz Text</string>
+    <string name="question_text">Question Text</string>
 
     <string name="mammals">Mammals</string>
     <string name="insects">Insects</string>

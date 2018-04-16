@@ -1,7 +1,6 @@
 package com.videlilja.linda.lia.model;
 
 import android.arch.lifecycle.LiveData;
-import android.widget.TextView;
 
 import com.videlilja.linda.lia.R;
 
