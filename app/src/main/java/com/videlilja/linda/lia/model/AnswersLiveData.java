@@ -1,9 +1,11 @@
 package com.videlilja.linda.lia.model;
 
 import android.arch.lifecycle.LiveData;
+import android.content.res.Resources;
 
 import com.videlilja.linda.lia.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AnswersLiveData extends LiveData<List<Answer>> {
@@ -30,15 +32,17 @@ public class AnswersLiveData extends LiveData<List<Answer>> {
             case HERBS:
                 break;
             case AFRICA:
-                int[] flagsAfrica = new int[]{
+                /*int[] flagsAfrica = new int[]{
                 R.drawable.dz, R.drawable.ao, R.drawable.bj, R.drawable.bw, R.drawable.bf, R.drawable.bi, R.drawable.cm, R.drawable.cv, R.drawable.cf,
                 R.drawable.td, R.drawable.km, R.drawable.ci, R.drawable.cd, R.drawable.dj, R.drawable.eg, R.drawable.gq, R.drawable.er, R.drawable.et,
                 R.drawable.ga, R.drawable.gm, R.drawable.gh, R.drawable.gn, R.drawable.gw, R.drawable.ke, R.drawable.ls, R.drawable.lr, R.drawable.ly,
                 R.drawable.mg, R.drawable.mw, R.drawable.ml, R.drawable.mr, R.drawable.mu, R.drawable.ma, R.drawable.mz, R.drawable.na, R.drawable.ne,
                 R.drawable.ng, R.drawable.cg, R.drawable.rw, R.drawable.st, R.drawable.sn, R.drawable.sc, R.drawable.sl, R.drawable.so, R.drawable.za,
                 R.drawable.sd, R.drawable.sd, R.drawable.sz, R.drawable.tz, R.drawable.tg, R.drawable.tn, R.drawable.ug, R.drawable.eh, R.drawable.zm,
-                R.drawable.zw};
+                R.drawable.zw};*/
 
+                ArrayList<Answer> flagsAfrica = new ArrayList<>();
+                flagsAfrica.add(new Answer(R.string.app_name, R.drawable.dz, Resources.getSystem().getString(R.string.animals) + Resources.getSystem().getString(R.string.animals)));
 
 
                 break;
