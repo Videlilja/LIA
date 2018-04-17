@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.videlilja.linda.lia.R;
+
 import com.videlilja.linda.lia.screen.home.HomeActivity;
 
 public class WelcomeActivity extends AppCompatActivity {

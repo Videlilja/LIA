@@ -14,7 +14,6 @@ public class Category {
         this.mTitle = mTitle;
         this.mAction = mAction;
         this.mImage = mImage;
-
     }
 
     public int getmTitle() {
