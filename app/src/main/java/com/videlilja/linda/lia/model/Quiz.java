@@ -1,12 +1,12 @@
 package com.videlilja.linda.lia.model;
 
-public class Answer {
+public class Quiz {
 
     private int mName;
     private int mImage;
     private String mQuestion;
 
-    public Answer(int mName, int mImage, String mQuestion) {
+    public Quiz(int mName, int mImage, String mQuestion) {
         this.mName = mName;
         this.mImage = mImage;
         this.mQuestion = mQuestion;

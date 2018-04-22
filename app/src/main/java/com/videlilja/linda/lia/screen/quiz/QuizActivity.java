@@ -24,39 +24,6 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        ImageView answer1 = findViewById(R.id.answer1);
-        ImageView answer2 = findViewById(R.id.answer2);
-        ImageView answer3 = findViewById(R.id.answer3);
-        ImageView answer4 = findViewById(R.id.answer4);
-
-        answer1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        answer2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        answer3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        answer4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
     }
 
     public static void start(Context context, Categories action){

@@ -8,6 +8,7 @@
     <string name="question_text">Question Text</string>
     <string name="q_button_text">Continue</string>
 
+    <!-- Games -->
     <string name="animals">Animals</string>
     <string name="nature">Nature</string>
     <string name="flags">Flags</string>
@@ -15,6 +16,7 @@
     <string name="math">Math</string>
     <string name="words">Words</string>
 
+    <!-- Games Categories -->
     <string name="mammals">Mammals</string>
     <string name="insects">Insects</string>
 
@@ -38,8 +40,62 @@
     <string name="word_to_pic">Word to picture</string>
     <string name="spelling">Spelling</string>
 
+    <!-- Questions -->
     <string name="flag_question">Choose the flag belonging to \n</string>
+    <string name="animal_question">Choose the image picturing the \n</string>
+    <string name="math_question">Choose the correct answer to the problem \n</string>
 
+    <!-- Animals Birds -->
+    <string name="an_bi_pigeon">Pigeon</string>
+    <string name="an_bi_sparrow">Sparrow</string>
+    <string name="an_bi_crow">Crow</string>
+    <string name="an_bi_seagull">Seagull</string>
+    <string name="an_bi_crane">Crane</string>
+    <string name="an_bi_eagle">Eagle</string>
+    <string name="an_bi_condor">Condor</string>
+    <string name="an_bi_hummingbird">Hummingbird</string>
+
+    <!-- Animals Mammals -->
+    <string name="an_ma_african_wild_dog">African wild dog</string>
+    <string name="an_ma_armadillo">Armadillo</string>
+    <string name="an_ma_baboon">Baboon</string>
+    <string name="an_ma_bear">Bear</string>
+    <string name="an_ma_bengal_tiger">Bengal Tiger</string>
+    <string name="an_ma_bighorn_sheep">Bighorn Sheep</string>
+    <string name="an_ma_bobcat">Bobcat</string>
+    <string name="an_ma_buffalo">Buffalo</string>
+    <string name="an_ma_camel">Camel</string>
+    <string name="an_ma_cheetah">Cheetah</string>
+    <string name="an_ma_chimpanzee">Chimpanzee</string>
+    <string name="an_ma_dolphin">Dolphin</string>
+    <string name="an_ma_donkey">Donkey</string>
+    <string name="an_ma_elephant">Elephant</string>
+    <string name="an_ma_ferret">Ferret</string>
+    <string name="an_ma_fox">Fox</string>
+    <string name="an_ma_giraffe">Giraffe</string>
+    <string name="an_ma_guinea_pig">Guinea Pig</string>
+    <string name="an_ma_hippopotamus">Hippopotamus</string>
+    <string name="an_ma_koala">Koala</string>
+    <string name="an_ma_lemur">Lemur</string>
+    <string name="an_ma_lion">Lion</string>
+    <string name="an_ma_moose">Moose</string>
+    <string name="an_ma_mouse">Mouse</string>
+    <string name="an_ma_orca">Orca</string>
+    <string name="an_ma_panda">Panda</string>
+    <string name="an_ma_rabbit">Rabbit</string>
+    <string name="an_ma_raccoon">Raccoon</string>
+    <string name="an_ma_red_panda">Red Panda</string>
+    <string name="an_ma_riesen">Riesen</string>
+    <string name="an_ma_seal">Seal</string>
+    <string name="an_ma_sheep">Sheep</string>
+    <string name="an_ma_squirrel">Squirrel</string>
+    <string name="an_ma_surikat">Surikat</string>
+    <string name="an_ma_wallaby">Wallaby</string>
+    <string name="an_ma_walrus">Walrus</string>
+    <string name="an_ma_wolf">Wolf</string>
+    <string name="an_ma_zebra">Zebra</string>
+
+    <!-- Flags Africa -->
     <string name="co_af_algeria_dz">Algeria</string>
     <string name="co_af_angola_ao">Angola</string>
     <string name="co_af_benin_bj">Benin</string>
@@ -96,6 +152,7 @@
     <string name="co_af_zambia_zm">Zambia</string>
     <string name="co_af_zimbabwe_zw">Zimbabwe</string>
 
+    <!-- Flags Asia -->
     <string name="co_as_afghanistan_af">Afghanistan</string>
     <string name="co_as_armenia_am">Armenia</string>
     <string name="co_as_azerbaijan_az">Azerbaijan</string>
@@ -147,6 +204,7 @@
     <string name="co_as_vietnam_vn">Vietnam</string>
     <string name="co_as_yemen_ye">Yemen</string>
 
+    <!-- Flags Europa -->
     <string name="co_eu_albania_al">Albania</string>
     <string name="co_eu_andorra_ad">Andorra</string>
     <string name="co_eu_austria_at">Austria</string>
@@ -194,6 +252,7 @@
     <string name="co_eu_the_united_kingdom_gb">The United Kingdom</string>
     <string name="co_eu_the_vatican_city_state_va">The Vatican City State</string>
 
+    <!-- Flags North America -->
     <string name="co_na_antigua_and_barbuda_ag">Antigua and Barbuda</string>
     <string name="co_na_the_bahamas_bs">Bahamas</string>
     <string name="co_na_barbados_bb">Barbados</string>
@@ -218,6 +277,7 @@
     <string name="co_na_trinidad_and_tobago_tt">Trinidad and Tobago</string>
     <string name="co_na_the_united_states_us">The United States</string>
 
+    <!-- Flags South America -->
     <string name="co_sa_argentina_ar">Argentina</string>
     <string name="co_sa_bolivia_bo">Bolivia</string>
     <string name="co_sa_brazil_br">Brazil</string>
@@ -232,6 +292,7 @@
     <string name="co_sa_uruguay_uy">Uruguay</string>
     <string name="co_sa_venezuela_ve">Venezuela</string>
 
+    <!-- Flags Oceania -->
     <string name="co_oc_australia_au">Australia</string>
     <string name="co_oc_cook_islands_ck">Cooc Islands</string>
     <string name="co_oc_east_timor_tl">East Timor</string>
@@ -250,53 +311,5 @@
     <string name="co_oc_tonga_to">Tonga</string>
     <string name="co_oc_tuvalu_tv">Tuvalu</string>
     <string name="co_oc_vanuatu_vu">Vanuatu</string>
-
-    <string name="an_bi_pigeon">Pigeon</string>
-    <string name="an_bi_sparrow">Sparrow</string>
-    <string name="an_bi_crow">Crow</string>
-    <string name="an_bi_seagull">Seagull</string>
-    <string name="an_bi_crane">Crane</string>
-    <string name="an_bi_eagle">Eagle</string>
-    <string name="an_bi_condor">Condor</string>
-    <string name="an_bi_hummingbird">Hummingbird</string>
-
-    <string name="an_ma_african_wild_dog">African wild dog</string>
-    <string name="an_ma_armadillo">Armadillo</string>
-    <string name="an_ma_baboon">Baboon</string>
-    <string name="an_ma_bear">Bear</string>
-    <string name="an_ma_bengal_tiger">Tiger</string>
-    <string name="an_ma_bighorn_sheep">Bighorn Sheep</string>
-    <string name="an_ma_bobcat">Bobcat</string>
-    <string name="an_ma_buffalo">Buffalo</string>
-    <string name="an_ma_camel">Camel</string>
-    <string name="an_ma_cheetah">Cheetah</string>
-    <string name="an_ma_chimpanzee">Chimpanzee</string>
-    <string name="an_ma_dolphin">Dolphin</string>
-    <string name="an_ma_donkey">Donkey</string>
-    <string name="an_ma_elephant">Elephant</string>
-    <string name="an_ma_ferret">Ferret</string>
-    <string name="an_ma_fox">Fox</string>
-    <string name="an_ma_giraffe">Giraffe</string>
-    <string name="an_ma_guinea_pig">Guinea Pig</string>
-    <string name="an_ma_hippopotamus">Hippopotamus</string>
-    <string name="an_ma_koala">Koala</string>
-    <string name="an_ma_lemur">Lemur</string>
-    <string name="an_ma_lion">Lion</string>
-    <string name="an_ma_moose">Moose</string>
-    <string name="an_ma_mouse">Mouse</string>
-    <string name="an_ma_orca">Orca</string>
-    <string name="an_ma_panda">Panda</string>
-    <string name="an_ma_rabbit">Rabbit</string>
-    <string name="an_ma_raccoon">Raccoon</string>
-    <string name="an_ma_red_panda">Panda</string>
-    <string name="an_ma_riesen">Riesen</string>
-    <string name="an_ma_seal">Seal</string>
-    <string name="an_ma_sheep">Sheep</string>
-    <string name="an_ma_squirrel">Squirrel</string>
-    <string name="an_ma_surikat">Surikat</string>
-    <string name="an_ma_wallaby">Wallaby</string>
-    <string name="an_ma_walrus">Walrus</string>
-    <string name="an_ma_wolf">Wolf</string>
-    <string name="an_ma_zebra">Zebra</string>
 
 </resources>
