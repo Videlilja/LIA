@@ -2,19 +2,18 @@
 <resources>
     <color name="colorPrimary">#FBBFE4</color>
     <color name="colorPrimaryDark">#FC7ECC</color>
+
+    <color name="colorSecondary">#D3FFFC</color>
+    <color name="colorSecondaryDark">#76CBC4</color>
+
     <color name="colorAccent">#06f212</color>
+
+    <color name="colorTertiary">#FFE6A5</color>
+
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
 
-    <color name="colorPrimär">#FBBFE4</color>
-    <color name="colorPrimärMörk">#FC7ECC</color>
-
-    <color name="colorSekundär">#D3FFFC</color>
-    <color name="colorSekundärMörk">#76CBC4</color>
-
-    <color name="colorTartiär">#FFE6A5</color>
-
-    <color name="colorMörkGrå">#707070</color>
-    <color name="colorMellanGrå">#C4C4C4</color>
-    <color name="colorLjusGrå">#DBDBDB</color>
+    <color name="colorDarkGray">#707070</color>
+    <color name="colorMediumGray">#C4C4C4</color>
+    <color name="colorLightGray">#DBDBDB</color>
 </resources>

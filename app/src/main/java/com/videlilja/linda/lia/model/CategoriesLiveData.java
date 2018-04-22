@@ -19,7 +19,6 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
                 mathCategories.add(new Category(R.string.subtraction, Categories.SUBTRACTION, R.drawable.sandwave));
                 mathCategories.add(new Category(R.string.multiplication, Categories.MULTIPLICATION, R.drawable.pinkwave));
                 mathCategories.add(new Category(R.string.division, Categories.DIVISION, R.drawable.sandwave));
-                mathCategories.add(new Category(R.string.geometry, Categories.GEOMETRY, R.drawable.splash));
                 setValue(mathCategories);
                 break;
             case FLAGS:
@@ -58,7 +57,6 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
                 List<Category> wordsCategories = new ArrayList<>();
                 wordsCategories.add(new Category(R.string.pic_to_word, Categories.PIC_TO_WORD, R.drawable.smiley));
                 wordsCategories.add(new Category(R.string.word_to_pic, Categories.WORD_TO_PIC, R.drawable.smiley));
-                wordsCategories.add(new Category(R.string.spelling, Categories.SPELLING, R.drawable.smiley));
                 setValue(wordsCategories);
                 break;
         }
