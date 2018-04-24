@@ -1,13 +1,9 @@
 package com.videlilja.linda.lia.screen.home;
 
 import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
-
 import com.videlilja.linda.lia.model.Game;
 import com.videlilja.linda.lia.model.GameLiveData;
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**

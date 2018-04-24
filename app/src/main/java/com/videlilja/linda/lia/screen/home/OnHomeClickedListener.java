@@ -7,5 +7,5 @@ import com.videlilja.linda.lia.model.Game;
  */
 
 public interface OnHomeClickedListener {
-    void onHomeClicked(Game Entity);
+    void onHomeClicked(Game entity);
 }

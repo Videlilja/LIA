@@ -24,9 +24,7 @@ public class Category {
         this.mTitle = mTitle;
     }
 
-    public Categories getmAction() {
-        return mAction;
-    }
+    public Categories getmAction() { return mAction; }
 
     public void setmAction(Categories mAction) {
         this.mAction = mAction;

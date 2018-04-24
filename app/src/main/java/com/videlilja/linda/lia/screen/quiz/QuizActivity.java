@@ -9,14 +9,9 @@ package com.videlilja.linda.lia.screen.quiz;
         import android.support.v7.app.AppCompatActivity;
         import android.support.v7.widget.GridLayoutManager;
         import android.support.v7.widget.RecyclerView;
-        import android.util.Log;
-
         import com.videlilja.linda.lia.R;
         import com.videlilja.linda.lia.model.Categories;
-        import com.videlilja.linda.lia.model.Category;
         import com.videlilja.linda.lia.model.Quiz;
-
-
         import java.util.List;
 
 
@@ -30,19 +25,16 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
-        Quiz action = (Quiz) getIntent().getSerializableExtra("quiz");
-        viewModel.setmData(action);
-
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override
-            public void onQuizClicked(Quiz quiz) {
-                QuizActivity.start(getApplicationContext(), quiz.getmName());
+            public void onQuizClicked(final Quiz entity) {
+
             }
         });
 
-        viewModel.getEntities().observe(this, new Observer<List<Category>>() {
+        viewModel.getQuiz().observe(this, new Observer<List<Quiz>>() {
             @Override
-            public void onChanged(@Nullable final List<Category> strings) {
+            public void onChanged(@Nullable final List<Quiz> strings) {
                 adapter.setData(strings);
             }
         });
@@ -53,7 +45,7 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-    public static void start(Context context, Quiz action){
+    public static void start(Context context, Categories action){
         Intent intent = new Intent(context, QuizActivity.class);
         intent.putExtra("category", action);
 
