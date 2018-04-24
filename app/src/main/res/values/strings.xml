@@ -41,9 +41,12 @@
     <string name="spelling">Spelling</string>
 
     <!-- Questions -->
-    <string name="flag_question">Choose the flag belonging to \n</string>
     <string name="animal_question">Choose the image picturing the \n</string>
+    <string name="nature_question">Choose the image picturing the \n</string>
     <string name="math_question">Choose the correct answer to the problem \n</string>
+    <string name="flag_question">Choose the flag belonging to \n</string>
+    <string name="capital_question">What is the capital of \n</string>
+    <string name="words_question">Choose the correct picture for \n</string>
 
     <!-- Animals Birds -->
     <string name="an_bi_pigeon">Pigeon</string>
@@ -94,6 +97,31 @@
     <string name="an_ma_walrus">Walrus</string>
     <string name="an_ma_wolf">Wolf</string>
     <string name="an_ma_zebra">Zebra</string>
+
+    <!-- Nature Flowers -->
+    <string name="na_fl_chrysanthemum">Chrysanthemum</string>
+    <string name="na_fl_coltsfoot">Coltsfoot</string>
+    <string name="na_fl_cornflower">Cornflower</string>
+    <string name="na_fl_crocus">Crocus</string>
+    <string name="na_fl_daffodil">Daffodil</string>
+    <string name="na_fl_dahlia">Dahlia</string>
+    <string name="na_fl_daisy">Daisy</string>
+    <string name="na_fl_dandelion">Dandelion</string>
+    <string name="na_fl_gerbera">Gerbera</string>
+    <string name="na_fl_hydrangea">Hydrangea</string>
+    <string name="na_fl_iris">Iris</string>
+    <string name="na_fl_lilac">Lilac</string>
+    <string name="na_fl_lily">Lily</string>
+    <string name="na_fl_lily_of_the_valley">Lily of the Valley</string>
+    <string name="na_fl_pelargonium">Pelargonium</string>
+    <string name="na_fl_petunia">Petunia</string>
+    <string name="na_fl_poppy">Poppy</string>
+    <string name="na_fl_snowdrop">Snowdrop</string>
+    <string name="na_fl_sunflower">Sunflower</string>
+    <string name="na_fl_tulip">Tulip</string>
+
+    <!-- Nature Herbs -->
+    <string name="na_he_wort">Wort</string>
 
     <!-- Flags Africa -->
     <string name="co_af_algeria_dz">Algeria</string>
