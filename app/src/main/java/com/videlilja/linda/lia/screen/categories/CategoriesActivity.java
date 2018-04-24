@@ -44,6 +44,9 @@ public class CategoriesActivity extends AppCompatActivity {
                 adapter.setData(strings);
             }
         });
+
+
+
         RecyclerView recyclerView = findViewById(R.id.categories_recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);
