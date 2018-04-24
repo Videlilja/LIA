@@ -84,6 +84,9 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 break;
 
             case FLOWERS:
+                ArrayList<Quiz> natureFlowers = new ArrayList<>();
+                natureFlowers.add(new Quiz(R.string.co_af_algeria_dz, R.drawable.dz, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.co_af_algeria_dz)));
+                natureFlowers.add(new Quiz(R.string.co_af_angola_ao, R.drawable.ao, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.co_af_angola_ao)));
                 break;
 
             case HERBS:
