@@ -34,7 +34,6 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(Quiz quiz) {
         mQuiz = quiz;
-        mQuestion.setText(quiz.getmQuestion());
         mLabel.setText(quiz.getmName());
         mImage.setImageResource(quiz.getmImage());
     }

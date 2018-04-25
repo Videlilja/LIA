@@ -24,9 +24,6 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        RecyclerView recyclerView = findViewById(R.id.quiz_recycler_view);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-
         QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override
@@ -41,6 +38,8 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+        RecyclerView recyclerView = findViewById(R.id.quiz_recycler_view);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);
     }
     public static void start(Context context, Categories action){
