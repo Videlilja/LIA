@@ -19,7 +19,7 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 break;
 
             case MAMMALS:
-                ArrayList<Quiz> animalsMammals = new ArrayList<>();
+                List<Quiz> animalsMammals = new ArrayList<>();
                 animalsMammals.add(new Quiz(R.string.an_ma_african_wild_dog, R.drawable.africanwilddog, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_african_wild_dog)));
                 animalsMammals.add(new Quiz(R.string.an_ma_armadillo, R.drawable.armadillo, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_armadillo)));
                 animalsMammals.add(new Quiz(R.string.an_ma_baboon, R.drawable.baboon, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_baboon)));
@@ -65,10 +65,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 animalsMammals.add(new Quiz(R.string.an_ma_walrus, R.drawable.walrus, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_walrus)));
                 animalsMammals.add(new Quiz(R.string.an_ma_wolf, R.drawable.wolf, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_wolf)));
                 animalsMammals.add(new Quiz(R.string.an_ma_zebra, R.drawable.zebra, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_zebra)));
+                setValue(animalsMammals);
                 break;
 
             case FLOWERS:
-                ArrayList<Quiz> natureFlowers = new ArrayList<>();
+                List<Quiz> natureFlowers = new ArrayList<>();
                 natureFlowers.add(new Quiz(R.string.na_fl_chrysanthemum, R.drawable.chrysanthemum, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_chrysanthemum)));
                 natureFlowers.add(new Quiz(R.string.na_fl_coltsfoot, R.drawable.coltsfoot, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_coltsfoot)));
                 natureFlowers.add(new Quiz(R.string.na_fl_cornflower, R.drawable.cornflower, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_cornflower)));
@@ -92,18 +93,20 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 natureFlowers.add(new Quiz(R.string.na_fl_snowdrop, R.drawable.snowdrop, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_snowdrop)));
                 natureFlowers.add(new Quiz(R.string.na_fl_sunflower, R.drawable.sunflower, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_sunflower)));
                 natureFlowers.add(new Quiz(R.string.na_fl_tulip, R.drawable.tulip, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_tulip)));
+                setValue(natureFlowers);
                 break;
 
             case HERBS:
                 break;
 
             case ADDITION:
-                ArrayList<Quiz> mathAdd = new ArrayList<>();
+                List<Quiz> mathAdd = new ArrayList<>();
                 mathAdd.add(new Quiz(R.string.co_af_algeria_dz, R.drawable.dz, Resources.getSystem().getString(R.string.math_question) + Resources.getSystem().getString(R.string.co_af_algeria_dz)));
                 mathAdd.add(new Quiz(R.string.co_af_angola_ao, R.drawable.ao, Resources.getSystem().getString(R.string.math_question) + Resources.getSystem().getString(R.string.co_af_angola_ao)));
                 mathAdd.add(new Quiz(R.string.co_af_benin_bj, R.drawable.bj, Resources.getSystem().getString(R.string.math_question) + Resources.getSystem().getString(R.string.co_af_benin_bj)));
                 mathAdd.add(new Quiz(R.string.co_af_botswana_bw, R.drawable.bw, Resources.getSystem().getString(R.string.math_question) + Resources.getSystem().getString(R.string.co_af_botswana_bw)));
                 mathAdd.add(new Quiz(R.string.co_af_burkina_faso_bf, R.drawable.bf, Resources.getSystem().getString(R.string.math_question) + Resources.getSystem().getString(R.string.co_af_burkina_faso_bf)));
+                setValue(mathAdd);
                 break;
 
             case SUBTRACTION:
@@ -116,7 +119,7 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 break;
 
             case F_AFRICA:
-                ArrayList<Quiz> flagsAfrica = new ArrayList<>();
+                List<Quiz> flagsAfrica = new ArrayList<>();
                 flagsAfrica.add(new Quiz(R.string.co_af_algeria_dz, R.drawable.dz, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_af_algeria_dz)));
                 flagsAfrica.add(new Quiz(R.string.co_af_angola_ao, R.drawable.ao, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_af_angola_ao)));
                 flagsAfrica.add(new Quiz(R.string.co_af_benin_bj, R.drawable.bj, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_af_benin_bj)));
@@ -182,10 +185,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 flagsAfrica.add(new Quiz(R.string.co_af_western_sahara_eh, R.drawable.eh, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_af_western_sahara_eh)));
                 flagsAfrica.add(new Quiz(R.string.co_af_zambia_zm, R.drawable.zm, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_af_zambia_zm)));
                 flagsAfrica.add(new Quiz(R.string.co_af_zimbabwe_zw, R.drawable.zw, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_af_zimbabwe_zw)));
+                setValue(flagsAfrica);
                 break;
 
             case F_ASIA:
-                ArrayList<Quiz> flagsAsia = new ArrayList<>();
+                List<Quiz> flagsAsia = new ArrayList<>();
                 flagsAsia.add(new Quiz(R.string.co_as_afghanistan_af, R.drawable.af, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_as_afghanistan_af)));
                 flagsAsia.add(new Quiz(R.string.co_as_armenia_am, R.drawable.am, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_as_armenia_am)));
                 flagsAsia.add(new Quiz(R.string.co_as_azerbaijan_az, R.drawable.az, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_as_azerbaijan_az)));
@@ -245,10 +249,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 flagsAsia.add(new Quiz(R.string.co_as_uzbekistan_uz, R.drawable.uz, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_as_uzbekistan_uz)));
                 flagsAsia.add(new Quiz(R.string.co_as_vietnam_vn, R.drawable.vn, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_as_vietnam_vn)));
                 flagsAsia.add(new Quiz(R.string.co_as_yemen_ye, R.drawable.ye, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_as_yemen_ye)));
+                setValue(flagsAsia);
                 break;
 
             case F_EUROPE:
-                ArrayList<Quiz> flagsEurope = new ArrayList<>();
+                List<Quiz> flagsEurope = new ArrayList<>();
                 flagsEurope.add(new Quiz(R.string.co_eu_albania_al, R.drawable.al, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_eu_albania_al)));
                 flagsEurope.add(new Quiz(R.string.co_eu_andorra_ad, R.drawable.ad, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_eu_andorra_ad)));
                 flagsEurope.add(new Quiz(R.string.co_eu_austria_at, R.drawable.at, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_eu_austria_at)));
@@ -303,10 +308,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 flagsEurope.add(new Quiz(R.string.co_eu_ukraine_ua, R.drawable.ua, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_eu_ukraine_ua)));
                 flagsEurope.add(new Quiz(R.string.co_eu_the_united_kingdom_gb, R.drawable.gb, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_eu_the_united_kingdom_gb)));
                 flagsEurope.add(new Quiz(R.string.co_eu_the_vatican_city_state_va, R.drawable.va, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_eu_the_vatican_city_state_va)));
+                setValue(flagsEurope);
                 break;
 
             case F_NORTH_AMERICA:
-                ArrayList<Quiz> flagsNAmerica = new ArrayList<>();
+                List<Quiz> flagsNAmerica = new ArrayList<>();
                 flagsNAmerica.add(new Quiz(R.string.co_na_antigua_and_barbuda_ag, R.drawable.ag, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_na_antigua_and_barbuda_ag)));
                 flagsNAmerica.add(new Quiz(R.string.co_na_the_bahamas_bs, R.drawable.bs, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_na_the_bahamas_bs)));
                 flagsNAmerica.add(new Quiz(R.string.co_na_barbados_bb, R.drawable.bb, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_na_barbados_bb)));
@@ -334,10 +340,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 flagsNAmerica.add(new Quiz(R.string.co_na_saint_vincent_and_the_grenadines_vc, R.drawable.vc, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_na_saint_vincent_and_the_grenadines_vc)));
                 flagsNAmerica.add(new Quiz(R.string.co_na_trinidad_and_tobago_tt, R.drawable.tt, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_na_trinidad_and_tobago_tt)));
                 flagsNAmerica.add(new Quiz(R.string.co_na_the_united_states_us, R.drawable.us, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_na_the_united_states_us)));
+                setValue(flagsNAmerica);
                 break;
 
             case F_SOUTH_AMERICA:
-                ArrayList<Quiz> flagsSAmerica = new ArrayList<>();
+                List<Quiz> flagsSAmerica = new ArrayList<>();
                 flagsSAmerica.add(new Quiz(R.string.co_sa_argentina_ar, R.drawable.ar, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_sa_argentina_ar)));
                 flagsSAmerica.add(new Quiz(R.string.co_sa_bolivia_bo, R.drawable.bo, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_sa_bolivia_bo)));
                 flagsSAmerica.add(new Quiz(R.string.co_sa_brazil_br, R.drawable.br, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_sa_brazil_br)));
@@ -353,10 +360,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 flagsSAmerica.add(new Quiz(R.string.co_sa_trinidad_and_tobago_tt, R.drawable.tt, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_sa_trinidad_and_tobago_tt)));
                 flagsSAmerica.add(new Quiz(R.string.co_sa_uruguay_uy, R.drawable.uy, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_sa_uruguay_uy)));
                 flagsSAmerica.add(new Quiz(R.string.co_sa_venezuela_ve, R.drawable.ve, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_sa_venezuela_ve)));
+                setValue(flagsSAmerica);
                 break;
 
             case F_OCEANIA:
-                ArrayList<Quiz> flagsOceania = new ArrayList<>();
+                List<Quiz> flagsOceania = new ArrayList<>();
                 flagsOceania.add(new Quiz(R.string.co_oc_australia_au, R.drawable.au, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_oc_australia_au)));
                 flagsOceania.add(new Quiz(R.string.co_oc_cook_islands_ck, R.drawable.co, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_oc_cook_islands_ck)));
                 flagsOceania.add(new Quiz(R.string.co_oc_east_timor_tl, R.drawable.tl, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_oc_east_timor_tl)));
@@ -378,10 +386,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 flagsOceania.add(new Quiz(R.string.co_oc_tonga_to, R.drawable.to, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_oc_tonga_to)));
                 flagsOceania.add(new Quiz(R.string.co_oc_tuvalu_tv, R.drawable.tv, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_oc_tuvalu_tv)));
                 flagsOceania.add(new Quiz(R.string.co_oc_vanuatu_vu, R.drawable.vu, Resources.getSystem().getString(R.string.flag_question) + Resources.getSystem().getString(R.string.co_oc_vanuatu_vu)));
+                setValue(flagsOceania);
                 break;
 
             case C_AFRICA:
-                ArrayList<Quiz> capitalsAfrica = new ArrayList<>();
+                List<Quiz> capitalsAfrica = new ArrayList<>();
                 capitalsAfrica.add(new Quiz(R.string.co_af_algeria_dz, R.drawable.dz, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_af_algeria_dz)));
                 capitalsAfrica.add(new Quiz(R.string.co_af_angola_ao, R.drawable.ao, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_af_angola_ao)));
                 capitalsAfrica.add(new Quiz(R.string.co_af_benin_bj, R.drawable.bj, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_af_benin_bj)));
@@ -447,10 +456,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsAfrica.add(new Quiz(R.string.co_af_western_sahara_eh, R.drawable.eh, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_af_western_sahara_eh)));
                 capitalsAfrica.add(new Quiz(R.string.co_af_zambia_zm, R.drawable.zm, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_af_zambia_zm)));
                 capitalsAfrica.add(new Quiz(R.string.co_af_zimbabwe_zw, R.drawable.zw, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_af_zimbabwe_zw)));
+                setValue(capitalsAfrica);
                 break;
 
             case C_ASIA:
-                ArrayList<Quiz> capitalsAsia = new ArrayList<>();
+                List<Quiz> capitalsAsia = new ArrayList<>();
                 capitalsAsia.add(new Quiz(R.string.co_as_afghanistan_af, R.drawable.af, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_as_afghanistan_af)));
                 capitalsAsia.add(new Quiz(R.string.co_as_armenia_am, R.drawable.am, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_as_armenia_am)));
                 capitalsAsia.add(new Quiz(R.string.co_as_azerbaijan_az, R.drawable.az, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_as_azerbaijan_az)));
@@ -510,10 +520,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsAsia.add(new Quiz(R.string.co_as_uzbekistan_uz, R.drawable.uz, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_as_uzbekistan_uz)));
                 capitalsAsia.add(new Quiz(R.string.co_as_vietnam_vn, R.drawable.vn, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_as_vietnam_vn)));
                 capitalsAsia.add(new Quiz(R.string.co_as_yemen_ye, R.drawable.ye, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_as_yemen_ye)));
+                setValue(capitalsAsia);
                 break;
 
             case C_EUROPE:
-                ArrayList<Quiz> capitalsEurope = new ArrayList<>();
+                List<Quiz> capitalsEurope = new ArrayList<>();
                 capitalsEurope.add(new Quiz(R.string.co_eu_albania_al, R.drawable.al, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_eu_albania_al)));
                 capitalsEurope.add(new Quiz(R.string.co_eu_andorra_ad, R.drawable.ad, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_eu_andorra_ad)));
                 capitalsEurope.add(new Quiz(R.string.co_eu_austria_at, R.drawable.at, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_eu_austria_at)));
@@ -568,10 +579,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsEurope.add(new Quiz(R.string.co_eu_ukraine_ua, R.drawable.ua, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_eu_ukraine_ua)));
                 capitalsEurope.add(new Quiz(R.string.co_eu_the_united_kingdom_gb, R.drawable.gb, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_eu_the_united_kingdom_gb)));
                 capitalsEurope.add(new Quiz(R.string.co_eu_the_vatican_city_state_va, R.drawable.va, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_eu_the_vatican_city_state_va)));
+                setValue(capitalsEurope);
                 break;
 
             case C_NORTH_AMERICA:
-                ArrayList<Quiz> capitalsNAmerica = new ArrayList<>();
+                List<Quiz> capitalsNAmerica = new ArrayList<>();
                 capitalsNAmerica.add(new Quiz(R.string.co_na_antigua_and_barbuda_ag, R.drawable.ag, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_na_antigua_and_barbuda_ag)));
                 capitalsNAmerica.add(new Quiz(R.string.co_na_the_bahamas_bs, R.drawable.bs, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_na_the_bahamas_bs)));
                 capitalsNAmerica.add(new Quiz(R.string.co_na_barbados_bb, R.drawable.bb, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_na_barbados_bb)));
@@ -599,10 +611,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsNAmerica.add(new Quiz(R.string.co_na_saint_vincent_and_the_grenadines_vc, R.drawable.vc, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_na_saint_vincent_and_the_grenadines_vc)));
                 capitalsNAmerica.add(new Quiz(R.string.co_na_trinidad_and_tobago_tt, R.drawable.tt, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_na_trinidad_and_tobago_tt)));
                 capitalsNAmerica.add(new Quiz(R.string.co_na_the_united_states_us, R.drawable.us, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_na_the_united_states_us)));
+                setValue(capitalsNAmerica);
                 break;
 
             case C_SOUTH_AMERICA:
-                ArrayList<Quiz> capitalsSAmerica = new ArrayList<>();
+                List<Quiz> capitalsSAmerica = new ArrayList<>();
                 capitalsSAmerica.add(new Quiz(R.string.co_sa_argentina_ar, R.drawable.ar, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_sa_argentina_ar)));
                 capitalsSAmerica.add(new Quiz(R.string.co_sa_bolivia_bo, R.drawable.bo, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_sa_bolivia_bo)));
                 capitalsSAmerica.add(new Quiz(R.string.co_sa_brazil_br, R.drawable.br, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_sa_brazil_br)));
@@ -618,10 +631,11 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsSAmerica.add(new Quiz(R.string.co_sa_trinidad_and_tobago_tt, R.drawable.tt, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_sa_trinidad_and_tobago_tt)));
                 capitalsSAmerica.add(new Quiz(R.string.co_sa_uruguay_uy, R.drawable.uy, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_sa_uruguay_uy)));
                 capitalsSAmerica.add(new Quiz(R.string.co_sa_venezuela_ve, R.drawable.ve, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_sa_venezuela_ve)));
+                setValue(capitalsSAmerica);
                 break;
 
             case C_OCEANIA:
-                ArrayList<Quiz> capitalsOceania = new ArrayList<>();
+                List<Quiz> capitalsOceania = new ArrayList<>();
                 capitalsOceania.add(new Quiz(R.string.co_oc_australia_au, R.drawable.au, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_australia_au)));
                 capitalsOceania.add(new Quiz(R.string.co_oc_cook_islands_ck, R.drawable.co, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_cook_islands_ck)));
                 capitalsOceania.add(new Quiz(R.string.co_oc_east_timor_tl, R.drawable.tl, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_east_timor_tl)));
@@ -643,6 +657,7 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsOceania.add(new Quiz(R.string.co_oc_tonga_to, R.drawable.to, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_tonga_to)));
                 capitalsOceania.add(new Quiz(R.string.co_oc_tuvalu_tv, R.drawable.tv, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_tuvalu_tv)));
                 capitalsOceania.add(new Quiz(R.string.co_oc_vanuatu_vu, R.drawable.vu, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_vanuatu_vu)));
+                setValue(capitalsOceania);
                 break;
 
             case PIC_TO_WORD:

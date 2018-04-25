@@ -2,6 +2,12 @@ package com.videlilja.linda.lia.screen.quiz;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
+
+import com.videlilja.linda.lia.model.CategoriesLiveData;
+import com.videlilja.linda.lia.model.Category;
+import com.videlilja.linda.lia.model.Game;
+import com.videlilja.linda.lia.model.GameLiveData;
+import com.videlilja.linda.lia.model.Games;
 import com.videlilja.linda.lia.model.Quiz;
 import com.videlilja.linda.lia.model.QuizLiveData;
 
