@@ -667,8 +667,4 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 break;
         }
     }
-
-    public QuizLiveData() {
-
-    }
 }

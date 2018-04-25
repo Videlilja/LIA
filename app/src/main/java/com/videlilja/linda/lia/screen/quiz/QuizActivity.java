@@ -12,12 +12,11 @@ package com.videlilja.linda.lia.screen.quiz;
         import com.videlilja.linda.lia.R;
         import com.videlilja.linda.lia.model.Categories;
         import com.videlilja.linda.lia.model.Quiz;
+
         import java.util.List;
 
 
 public class QuizActivity extends AppCompatActivity {
-
-    private static final String TAG = "QuizActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +24,9 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
+        Categories action = (Categories) getIntent().getSerializableExtra("category");
+        viewModel.setmQuiz(action);
+
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override
             public void onQuizClicked(final Quiz quiz) {

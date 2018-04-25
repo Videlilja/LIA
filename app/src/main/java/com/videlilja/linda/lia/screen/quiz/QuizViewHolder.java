@@ -8,9 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.videlilja.linda.lia.R;
-import com.videlilja.linda.lia.model.Category;
 import com.videlilja.linda.lia.model.Quiz;
-import com.videlilja.linda.lia.screen.categories.OnCategoryClickedListener;
 
 public class QuizViewHolder extends RecyclerView.ViewHolder {
     private TextView mQuestion;
