@@ -8,35 +8,38 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.videlilja.linda.lia.R;
+import com.videlilja.linda.lia.model.Category;
 import com.videlilja.linda.lia.model.Quiz;
+import com.videlilja.linda.lia.screen.categories.OnCategoryClickedListener;
 
 public class QuizViewHolder extends RecyclerView.ViewHolder {
+    private TextView mQuestion;
     private TextView mLabel;
-    private Quiz mEntity;
+    private Quiz mQuiz;
     private ImageView mImage;
 
     public QuizViewHolder(View itemView, final OnQuizClickedListener listener) {
         super(itemView);
+        mQuestion = itemView.findViewById(R.id.question_text);
         mLabel = itemView.findViewById(R.id.quiz_label);
         mImage = itemView.findViewById(R.id.quiz_image_view);
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                listener.onQuizClicked(mEntity);
+                listener.onQuizClicked(mQuiz);
             }
         });
-
     }
 
-    public void bind(Quiz entity) {
-        mEntity = entity;
-        mLabel.setText(entity.getmName());
-        mImage.setImageResource(entity.getmImage());
+    public void bind(Quiz quiz) {
+        mQuiz = quiz;
+        mQuestion.setText(quiz.getmQuestion());
+        mLabel.setText(quiz.getmName());
+        mImage.setImageResource(quiz.getmImage());
     }
-    public static com.videlilja.linda.lia.screen.quiz.QuizViewHolder newInstance(final ViewGroup parent,
-                                                                                 OnQuizClickedListener listener) {
-        return new com.videlilja.linda.lia.screen.quiz.QuizViewHolder(
+    public static QuizViewHolder newInstance(final ViewGroup parent, OnQuizClickedListener listener) {
+        return new QuizViewHolder(
                 LayoutInflater.from(parent.getContext()).inflate(
                         R.layout.quiz_item,
                         parent,
@@ -45,6 +48,4 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
                 listener
         );
     }
-
-
 }

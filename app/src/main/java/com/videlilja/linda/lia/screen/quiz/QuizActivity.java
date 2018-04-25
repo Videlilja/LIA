@@ -24,32 +24,28 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        RecyclerView recyclerView = findViewById(R.id.quiz_recycler_view);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+
         QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override
-            public void onQuizClicked(final Quiz entity) {
-
+            public void onQuizClicked(final Quiz quiz) {
             }
         });
 
         viewModel.getQuiz().observe(this, new Observer<List<Quiz>>() {
             @Override
-            public void onChanged(@Nullable final List<Quiz> strings) {
-                adapter.setData(strings);
+            public void onChanged(@Nullable final List<Quiz> quizzes) {
+                adapter.setQuizList(quizzes);
             }
         });
 
-        RecyclerView recyclerView = findViewById(R.id.quiz_recycler_view);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);
-
     }
-
     public static void start(Context context, Categories action){
         Intent intent = new Intent(context, QuizActivity.class);
         intent.putExtra("category", action);
-
-
         context.startActivity(intent);
     }
 }

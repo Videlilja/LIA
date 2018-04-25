@@ -7,29 +7,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuizAdapter extends RecyclerView.Adapter<QuizViewHolder> {
-    private List<Quiz> mData = new ArrayList<>();
+    private List<Quiz> mQuizList = new ArrayList<>();
     private OnQuizClickedListener mQuizClickListener;
+
     public QuizAdapter(OnQuizClickedListener onQuizClickedListener) {
         mQuizClickListener = onQuizClickedListener;
     }
 
-    public void setData(List<Quiz> data) {
-        mData = data;
+    public void setQuizList(final List<Quiz> quizList) {
+        mQuizList = quizList;
         notifyDataSetChanged();
     }
 
     @Override
-    public QuizViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public int getItemCount() {
+        return mQuizList.size();
+    }
+
+    @Override
+    public QuizViewHolder onCreateViewHolder(final ViewGroup parent, final int viewType) {
         return QuizViewHolder.newInstance(parent, mQuizClickListener);
     }
 
     @Override
-    public void onBindViewHolder(QuizViewHolder holder, int position) {
-        holder.bind(mData.get(position));
-    }
-
-    @Override
-    public int getItemCount() {
-        return mData.size();
+    public void onBindViewHolder(final QuizViewHolder holder, final int position) {
+        holder.bind(mQuizList.get(position));
     }
 }

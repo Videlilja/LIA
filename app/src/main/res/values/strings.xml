@@ -4,7 +4,7 @@
     <string name="title_activity_nature_herbs">Herbs</string>
     <string name="home_text">Games</string>
     <string name="category_text">Categories</string>
-    <string name="quiz_text">Category</string>
+    <string name="quiz_text">Quiz</string>
     <string name="question_text">Question Text</string>
     <string name="q_button_text">Continue</string>
 
@@ -339,5 +339,16 @@
     <string name="co_oc_tonga_to">Tonga</string>
     <string name="co_oc_tuvalu_tv">Tuvalu</string>
     <string name="co_oc_vanuatu_vu">Vanuatu</string>
+
+    <!-- Capitals Africa -->
+    <!-- Capitals Asia -->
+    <!-- Capitals Europa -->
+    <!-- Capitals North America -->
+    <!-- Capitals South America -->
+    <!-- Capitals Oceania -->
+
+    <!-- Math -->
+
+    <!-- Words -->
 
 </resources>

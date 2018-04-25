@@ -45,8 +45,6 @@ public class CategoriesActivity extends AppCompatActivity {
             }
         });
 
-
-
         RecyclerView recyclerView = findViewById(R.id.categories_recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);
