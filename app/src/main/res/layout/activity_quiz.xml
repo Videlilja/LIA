@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pinkwave"
-    tools:context=".screen.quiz.QuizActivity">
+    tools:context="com.videlilja.linda.lia.screen.quiz.QuizActivity">
 
     <TextView
         android:id="@+id/heading_quiz"
