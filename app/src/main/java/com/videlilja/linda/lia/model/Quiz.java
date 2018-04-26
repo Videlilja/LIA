@@ -4,9 +4,9 @@ public class Quiz {
 
     private int mName;
     private int mImage;
-    private String mQuestion;
+    private int mQuestion;
 
-    public Quiz(int mName, int mImage, String mQuestion) {
+    public Quiz(int mName, int mImage, int mQuestion) {
         this.mName = mName;
         this.mImage = mImage;
         this.mQuestion = mQuestion;
@@ -28,11 +28,11 @@ public class Quiz {
         this.mImage = mImage;
     }
 
-    public String getmQuestion() {
+    public int getmQuestion() {
         return mQuestion;
     }
 
-    public void setmQuestion(String mQuestion) {
+    public void setmQuestion(int mQuestion) {
         this.mQuestion = mQuestion;
     }
 }

@@ -20,10 +20,10 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
 
             case MAMMALS:
                 List<Quiz> animalsMammals = new ArrayList<>();
-                animalsMammals.add(new Quiz(R.string.an_ma_african_wild_dog, R.drawable.africanwilddog, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_african_wild_dog)));
-                animalsMammals.add(new Quiz(R.string.an_ma_armadillo, R.drawable.armadillo, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_armadillo)));
-                animalsMammals.add(new Quiz(R.string.an_ma_baboon, R.drawable.baboon, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_baboon)));
-                animalsMammals.add(new Quiz(R.string.an_ma_bear, R.drawable.bear, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_bear)));
+                animalsMammals.add(new Quiz(R.string.an_ma_african_wild_dog, R.drawable.africanwilddog, R.string.animal_question));
+                animalsMammals.add(new Quiz(R.string.an_ma_armadillo, R.drawable.armadillo, R.string.animal_question));
+                animalsMammals.add(new Quiz(R.string.an_ma_baboon, R.drawable.baboon, R.string.animal_question));
+                /*animalsMammals.add(new Quiz(R.string.an_ma_bear, R.drawable.bear, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_bear)));
                 animalsMammals.add(new Quiz(R.string.an_ma_bengal_tiger, R.drawable.bengaltiger, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_bengal_tiger)));
 
                 animalsMammals.add(new Quiz(R.string.an_ma_bighorn_sheep, R.drawable.bighornsheep, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_bighorn_sheep)));
@@ -64,10 +64,10 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
 
                 animalsMammals.add(new Quiz(R.string.an_ma_walrus, R.drawable.walrus, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_walrus)));
                 animalsMammals.add(new Quiz(R.string.an_ma_wolf, R.drawable.wolf, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_wolf)));
-                animalsMammals.add(new Quiz(R.string.an_ma_zebra, R.drawable.zebra, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_zebra)));
+                animalsMammals.add(new Quiz(R.string.an_ma_zebra, R.drawable.zebra, Resources.getSystem().getString(R.string.animal_question) + Resources.getSystem().getString(R.string.an_ma_zebra)));*/
                 setValue(animalsMammals);
                 break;
-
+/*
             case FLOWERS:
                 List<Quiz> natureFlowers = new ArrayList<>();
                 natureFlowers.add(new Quiz(R.string.na_fl_chrysanthemum, R.drawable.chrysanthemum, Resources.getSystem().getString(R.string.nature_question) + Resources.getSystem().getString(R.string.na_fl_chrysanthemum)));
@@ -658,7 +658,7 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
                 capitalsOceania.add(new Quiz(R.string.co_oc_tuvalu_tv, R.drawable.tv, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_tuvalu_tv)));
                 capitalsOceania.add(new Quiz(R.string.co_oc_vanuatu_vu, R.drawable.vu, Resources.getSystem().getString(R.string.capital_question) + Resources.getSystem().getString(R.string.co_oc_vanuatu_vu)));
                 setValue(capitalsOceania);
-                break;
+                break;*/
 
             case PIC_TO_WORD:
                 break;
