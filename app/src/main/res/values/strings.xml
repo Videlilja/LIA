@@ -48,7 +48,7 @@
     <string name="capital_question">What is the capital of \n</string>
     <string name="words_question">Choose the correct picture for \n</string>
 
-    <!-- Animals Birds -->
+    <!-- Animals Birds
     <string name="an_bi_pigeon">Pigeon</string>
     <string name="an_bi_sparrow">Sparrow</string>
     <string name="an_bi_crow">Crow</string>
@@ -56,7 +56,8 @@
     <string name="an_bi_crane">Crane</string>
     <string name="an_bi_eagle">Eagle</string>
     <string name="an_bi_condor">Condor</string>
-    <string name="an_bi_hummingbird">Hummingbird</string>
+    <string name="an_bi_hummingbird">Hummingbird</string> -->
+    <string name="an_bi_crow">Crow</string>
 
     <!-- Animals Mammals -->
     <string name="an_ma_african_wild_dog">African wild dog</string>
