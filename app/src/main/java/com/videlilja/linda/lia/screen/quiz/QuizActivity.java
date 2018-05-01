@@ -20,6 +20,10 @@ package com.videlilja.linda.lia.screen.quiz;
 
 public class QuizActivity extends AppCompatActivity {
 
+    private int rightAnswers = 0;
+    boolean correctA = false;
+    private int amountQ = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,14 +39,22 @@ public class QuizActivity extends AppCompatActivity {
         final TextView questionTxt = findViewById(R.id.question_text);
         questionTxt.setText(viewModel.getmRightAnswer().getmQuestion());
 
+
+
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override
             public void onQuizClicked(final Quiz quiz) {
                 if (quiz == viewModel.getmRightAnswer()) {
                     //RÄTT SVAR
+                    correctA = true;
+                    rightAnswers = rightAnswers + 1;
+                    amountQ = amountQ + 1;
                     viewModel.setmQuiz(category);
+
                 } else {
                     //FEL SVAR
+                    correctA = false;
+                    amountQ = amountQ + 1;
                 }
             }
         });
