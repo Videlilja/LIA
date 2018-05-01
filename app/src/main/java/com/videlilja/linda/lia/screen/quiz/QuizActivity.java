@@ -9,6 +9,8 @@ package com.videlilja.linda.lia.screen.quiz;
         import android.support.v7.app.AppCompatActivity;
         import android.support.v7.widget.GridLayoutManager;
         import android.support.v7.widget.RecyclerView;
+        import android.widget.TextView;
+
         import com.videlilja.linda.lia.R;
         import com.videlilja.linda.lia.model.Categories;
         import com.videlilja.linda.lia.model.Quiz;
@@ -26,6 +28,9 @@ public class QuizActivity extends AppCompatActivity {
         QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         Categories action = (Categories) getIntent().getSerializableExtra("category");
         viewModel.setmQuiz(action);
+
+        TextView sortTxt = findViewById(R.id.sort_text);
+        sortTxt.setText(viewModel.getmRightAnswer().getmName());
 
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override

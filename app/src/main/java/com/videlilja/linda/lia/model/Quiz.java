@@ -2,21 +2,22 @@ package com.videlilja.linda.lia.model;
 
 public class Quiz {
 
-    private int mName;
+    private String mName;
     private int mImage;
-    private int mQuestion;
+    private String mQuestion;
 
-    public Quiz(int mName, int mImage, int mQuestion) {
+
+    public Quiz(String mName, int mImage, String mQuestion) {
         this.mName = mName;
         this.mImage = mImage;
         this.mQuestion = mQuestion;
     }
 
-    public int getmName() {
+    public String getmName() {
         return mName;
     }
 
-    public void setmName(int mName) {
+    public void setmName(String mName) {
         this.mName = mName;
     }
 
@@ -28,11 +29,11 @@ public class Quiz {
         this.mImage = mImage;
     }
 
-    public int getmQuestion() {
+    public String getmQuestion() {
         return mQuestion;
     }
 
-    public void setmQuestion(int mQuestion) {
+    public void setmQuestion(String mQuestion) {
         this.mQuestion = mQuestion;
     }
 }
