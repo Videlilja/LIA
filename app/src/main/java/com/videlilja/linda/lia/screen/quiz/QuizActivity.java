@@ -25,16 +25,25 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
-        Categories action = (Categories) getIntent().getSerializableExtra("category");
-        viewModel.setmQuiz(action);
+        final QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
+        final Categories category = (Categories) getIntent().getSerializableExtra("category");
+        viewModel.setmQuiz(category);
 
-        TextView sortTxt = findViewById(R.id.sort_text);
+        final TextView sortTxt = findViewById(R.id.sort_text);
         sortTxt.setText(viewModel.getmRightAnswer().getmName());
+
+        final TextView questionTxt = findViewById(R.id.question_text);
+        questionTxt.setText(viewModel.getmRightAnswer().getmQuestion());
 
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
             @Override
             public void onQuizClicked(final Quiz quiz) {
+                if (quiz == viewModel.getmRightAnswer()) {
+                    //RÄTT SVAR
+                    viewModel.setmQuiz(category);
+                } else {
+                    //FEL SVAR
+                }
             }
         });
 
@@ -42,6 +51,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable final List<Quiz> quizzes) {
                 adapter.setQuizList(quizzes);
+                sortTxt.setText(viewModel.getmRightAnswer().getmName());
             }
         });
 

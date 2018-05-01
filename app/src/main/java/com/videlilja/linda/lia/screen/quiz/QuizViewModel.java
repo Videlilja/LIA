@@ -31,16 +31,17 @@ public class QuizViewModel extends AndroidViewModel {
     public void setmQuiz(Categories category) {
         List<Quiz> quiz = new QuizLiveData(category, getApplication()).getValue();
         Random random = new Random();
-
         List<Quiz> options = new ArrayList<>();
 
-        for(int i=0; i<4; i++){
+        while (options.size() < 4){
             int n = random.nextInt(quiz.size());
-            options.add(quiz.get(n));
+            if (!options.contains(quiz.get(n))) {
+                options.add(quiz.get(n));
+            }
         }
 
-        mOptions.setValue(options);
         mRightAnswer = options.get(random.nextInt(options.size()));
+        mOptions.setValue(options);
     }
 
     public Quiz getmRightAnswer() {

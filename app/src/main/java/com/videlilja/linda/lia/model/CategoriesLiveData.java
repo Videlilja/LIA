@@ -16,7 +16,7 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
             case ANIMALS:
                 List<Category> animalsCategories = new ArrayList<>();
                 animalsCategories.add(new Category(R.string.mammals, Categories.MAMMALS, R.drawable.smiley));
-                animalsCategories.add(new Category(R.string.insects, Categories.BIRDS, R.drawable.smiley));
+                animalsCategories.add(new Category(R.string.birds, Categories.BIRDS, R.drawable.smiley));
                 setValue(animalsCategories);
                 break;
 
