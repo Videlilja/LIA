@@ -8,12 +8,12 @@
 
     <color name="colorAccent">#06f212</color>
 
-    <color name="colorTertiary">#FFE6A5</color>
+    <color name="colorTertiary">#ffe6a5</color>
 
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
 
     <color name="colorDarkGray">#707070</color>
     <color name="colorMediumGray">#C4C4C4</color>
-    <color name="colorLightGray">#DBDBDB</color>
+    <color name="colorLightGray">#dbdbdb</color>
 </resources>

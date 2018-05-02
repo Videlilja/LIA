@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Kul Kunskap</string>
-    <string name="start_games_text">Start Games</string>
+    <string name="start_games_text">Start</string>
     <string name="title_activity_nature_herbs">Herbs</string>
     <string name="home_text">Games</string>
     <string name="category_text">Categories</string>
@@ -380,7 +380,7 @@
     <string name="ca_af_cameroon_cm">Yaoundndé</string>
     <string name="ca_af_cape_verde_cv">Praia</string>
     <string name="ca_af_the_central_african_republic_cf">Bangui</string>
-    <string name="ca_af_chad_td">N'Djamena</string>
+    <string name="ca_af_chad_td">N\'Djamena</string>
     <string name="ca_af_the_comoros_km">Moroni</string>
     <string name="ca_af_ivory_coast_ci">Yamoussoukro</string>
     <string name="ca_af_the_democratic_republic_of_the_congo_cd">Kinshasa</string>
@@ -528,7 +528,7 @@
     <string name="ca_eu_the_vatican_city_state_va">Vatican City</string>
 
     <!-- Capitals North America -->
-    <string name="ca_na_antigua_and_barbuda_ag">St. John's</string>
+    <string name="ca_na_antigua_and_barbuda_ag">St. John\'s</string>
     <string name="ca_na_the_bahamas_bs">Nassau</string>
     <string name="ca_na_barbados_bb">Bridgetown</string>
     <string name="ca_na_belize_bz">Belmopan</string>
@@ -538,7 +538,7 @@
     <string name="ca_na_dominica_dm">Roseau</string>
     <string name="ca_na_the_dominican_republic_do">Santo Domingo</string>
     <string name="ca_na_el_salvador_sv">San Salvador</string>
-    <string name="ca_na_grenada_gd">St. George's</string>
+    <string name="ca_na_grenada_gd">St. George\'s</string>
     <string name="ca_na_guatemala_gt">Guatemala City</string>
     <string name="ca_na_haiti_ht">Port-au-Prince</string>
     <string name="ca_na_honduras_hn">Tegucigalpa</string>
@@ -583,7 +583,7 @@
     <string name="ca_oc_papua_new_guinea_pg">Port Moresby</string>
     <string name="ca_oc_samoa_ws">Apia</string>
     <string name="ca_oc_the_solomon_islands_sb">Honiara</string>
-    <string name="ca_oc_tonga_to">Nuku'alofa</string>
+    <string name="ca_oc_tonga_to">Nuku\'alofa</string>
     <string name="ca_oc_tuvalu_tv">Funafuti</string>
     <string name="ca_oc_vanuatu_vu">Port Vila</string>
 
@@ -592,8 +592,8 @@
     <!-- Words -->
 
     <!-- End Screen -->
-    <string name="end">End games</string>
-    <string name="home">Home</string>
-    <string name="retry">Retry</string>
+    <string name="end">Quit playing</string>
+    <string name="home">New Game</string>
+    <string name="retry">Retry Game</string>
 
 </resources>

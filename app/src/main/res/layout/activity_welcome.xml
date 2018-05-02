@@ -27,8 +27,13 @@
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:background="@color/colorTertiary"
+        android:elevation="32dp"
         android:gravity="center"
         android:text="@string/start_games_text"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -23,7 +23,7 @@ public class QuizActivity extends AppCompatActivity {
     private int rightAnswers = 0;
     boolean rightAnswer = false;
     private int amountA = 0;
-    boolean perfect = false;
+    public boolean perfect = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         final QuizViewModel viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
+
         final Categories category = (Categories) getIntent().getSerializableExtra("category");
         viewModel.setmQuiz(category);
 
@@ -53,40 +54,34 @@ public class QuizActivity extends AppCompatActivity {
 
 
 
-
-
                     // 1 seconds delay
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    if (rightAnswers < 10){
-                        System.out.println("Right answers: " + rightAnswers);
-                        System.out.println("Right answer: " + rightAnswer);
-                        System.out.println("Answers:  " + amountA);
+
+                    if (rightAnswers < 3){
                         viewModel.setmQuiz(category);
                     } else {
-                        System.out.println("Right answers: " + rightAnswers);
-                        System.out.println("Right answer: " + rightAnswer);
-                        System.out.println("Answers:  " + amountA);
-
                         if(rightAnswers == amountA){
-                            System.out.println("PERFECT!!! ");
                             perfect = true;
                         }
-                        System.out.println("Byter till slutskärm ");
+                        // Spelet är slut, byt till EndOfGame
                         Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
+
+                        //Skicka med prefect
+                        Bundle bundle = new Bundle();
+                        bundle.putBoolean("perfect", perfect);
+                        intent.putExtras(bundle);
+
+                        //Starta nästa activity
                         startActivity(intent);
                     }
-
                 } else {
                     //FEL SVAR
                     rightAnswer = false;
-
                     amountA = amountA + 1;
-                    System.out.println("Right answer: " + rightAnswer);
-                    System.out.println("Answers" + amountA);
                 }
             }
         });

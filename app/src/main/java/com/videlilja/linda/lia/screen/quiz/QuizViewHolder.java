@@ -19,7 +19,6 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
     public QuizViewHolder(View itemView, final OnQuizClickedListener listener) {
         super(itemView);
         mQuestion = itemView.findViewById(R.id.question_text);
-        //mLabel = itemView.findViewById(R.id.quiz_label);
         mImage = itemView.findViewById(R.id.quiz_image_view);
 
         itemView.setOnClickListener(new View.OnClickListener() {
