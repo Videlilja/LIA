@@ -12,12 +12,12 @@ public class GameLiveData extends LiveData<List<Game>> {
     public GameLiveData() {
 
         List<Game> games = new ArrayList<>();
-        games.add(new Game(R.string.animals, Games.ANIMALS, R.drawable.smiley));
-        games.add(new Game(R.string.nature, Games.NATURE, R.drawable.smiley));
-        games.add(new Game(R.string.math, Games.MATH, R.drawable.smiley));
-        games.add(new Game(R.string.flags, Games.FLAGS, R.drawable.smiley));
-        games.add(new Game(R.string.capitals, Games.CAPITALS, R.drawable.smiley));
-        games.add(new Game(R.string.words, Games.WORDS, R.drawable.smiley));
+        games.add(new Game(R.string.animals, Games.ANIMALS, R.drawable.animalsicon));
+        games.add(new Game(R.string.nature, Games.NATURE, R.drawable.natureicon));
+        games.add(new Game(R.string.math, Games.MATH, R.drawable.mathicon));
+        games.add(new Game(R.string.flags, Games.FLAGS, R.drawable.flagsicon));
+        games.add(new Game(R.string.capitals, Games.CAPITALS, R.drawable.capitalsicon));
+        games.add(new Game(R.string.words, Games.WORDS, R.drawable.wordtopicicon));
 
         setValue(games);
 
