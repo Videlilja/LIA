@@ -21,8 +21,9 @@ package com.videlilja.linda.lia.screen.quiz;
 public class QuizActivity extends AppCompatActivity {
 
     private int rightAnswers = 0;
-    boolean correctA = false;
-    private int amountQ = 0;
+    boolean rightAnswer = false;
+    private int amountA = 0;
+    boolean perfect = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,15 +47,40 @@ public class QuizActivity extends AppCompatActivity {
             public void onQuizClicked(final Quiz quiz) {
                 if (quiz == viewModel.getmRightAnswer()) {
                     //RÄTT SVAR
-                    correctA = true;
+                    rightAnswer = true;
                     rightAnswers = rightAnswers + 1;
-                    amountQ = amountQ + 1;
-                    viewModel.setmQuiz(category);
+                    amountA = amountA + 1;
+
+                    //sleep 5 seconds
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    if (rightAnswers < 10){
+                        System.out.println("");
+                        System.out.println("Right answers: " + rightAnswers);
+                        System.out.println("Right answer: " + rightAnswer);
+                        System.out.println("Answers:  " + amountA);
+                        viewModel.setmQuiz(category);
+                    } else {
+                        System.out.println("Right answers: " + rightAnswers);
+                        System.out.println("Right answer: " + rightAnswer);
+                        System.out.println("Answers:  " + amountA);
+
+                        if(rightAnswers == amountA){
+                            System.out.println("PERFECT!!! ");
+                            perfect = true;
+                        }
+                        System.out.println("Byter till slut-skärm ");
+                    }
 
                 } else {
                     //FEL SVAR
-                    correctA = false;
-                    amountQ = amountQ + 1;
+                    rightAnswer = false;
+                    amountA = amountA + 1;
+                    System.out.println("Right answer: " + rightAnswer);
+                    System.out.println("Answers" + amountA);
                 }
             }
         });
