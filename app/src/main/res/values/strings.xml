@@ -9,6 +9,8 @@
     <string name="sort_text">Armadillo</string>
     <string name="q_button_text">Continue</string>
 
+
+
     <!-- Games -->
     <string name="animals">Animals</string>
     <string name="nature">Nature</string>
@@ -588,5 +590,10 @@
     <!-- Math -->
 
     <!-- Words -->
+
+    <!-- End Screen -->
+    <string name="end">End games</string>
+    <string name="home">Home</string>
+    <string name="retry">Retry</string>
 
 </resources>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.videlilja.linda.lia.screen.endofgame.EndOfGameActivity">
-
 
     <ImageView
         android:id="@+id/categorywave"
@@ -19,5 +19,72 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/sandwave" />
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camel" />
+
+    <Button
+        android:id="@+id/terminate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:elevation="9dp"
+        android:text="@string/end"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:elevation="9dp"
+        android:text="@string/home"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terminate" />
+
+    <Button
+        android:id="@+id/repeat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:elevation="9dp"
+        android:text="@string/retry"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home" />
 
 </android.support.constraint.ConstraintLayout>

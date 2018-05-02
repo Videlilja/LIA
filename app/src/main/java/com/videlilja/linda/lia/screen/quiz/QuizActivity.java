@@ -10,10 +10,10 @@ package com.videlilja.linda.lia.screen.quiz;
         import android.support.v7.widget.GridLayoutManager;
         import android.support.v7.widget.RecyclerView;
         import android.widget.TextView;
-
         import com.videlilja.linda.lia.R;
         import com.videlilja.linda.lia.model.Categories;
         import com.videlilja.linda.lia.model.Quiz;
+        import com.videlilja.linda.lia.screen.endofgame.EndOfGameActivity;
 
         import java.util.List;
 
@@ -40,9 +40,8 @@ public class QuizActivity extends AppCompatActivity {
         final TextView questionTxt = findViewById(R.id.question_text);
         questionTxt.setText(viewModel.getmRightAnswer().getmQuestion());
 
-
-
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
+
             @Override
             public void onQuizClicked(final Quiz quiz) {
                 if (quiz == viewModel.getmRightAnswer()) {
@@ -50,15 +49,19 @@ public class QuizActivity extends AppCompatActivity {
                     rightAnswer = true;
                     rightAnswers = rightAnswers + 1;
                     amountA = amountA + 1;
+                    // Läs in listan igen med förändrad bakgrund
 
-                    //sleep 5 seconds
+
+
+
+
+                    // 1 seconds delay
                     try {
-                        Thread.sleep(5000);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                     if (rightAnswers < 10){
-                        System.out.println("");
                         System.out.println("Right answers: " + rightAnswers);
                         System.out.println("Right answer: " + rightAnswer);
                         System.out.println("Answers:  " + amountA);
@@ -72,12 +75,15 @@ public class QuizActivity extends AppCompatActivity {
                             System.out.println("PERFECT!!! ");
                             perfect = true;
                         }
-                        System.out.println("Byter till slut-skärm ");
+                        System.out.println("Byter till slutskärm ");
+                        Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
+                        startActivity(intent);
                     }
 
                 } else {
                     //FEL SVAR
                     rightAnswer = false;
+
                     amountA = amountA + 1;
                     System.out.println("Right answer: " + rightAnswer);
                     System.out.println("Answers" + amountA);

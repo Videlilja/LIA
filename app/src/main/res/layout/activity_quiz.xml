@@ -54,11 +54,10 @@
     <TextView
         android:id="@+id/sort_text"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily="casual"
-        android:gravity="center"
         android:text="@string/sort_text"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
