@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import com.videlilja.linda.lia.R;
@@ -15,23 +16,26 @@ import com.videlilja.linda.lia.screen.quiz.QuizActivity;
 
 public class EndOfGameActivity extends AppCompatActivity {
 
-    private ImageView endImage;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end_of_game);
-        endImage = findViewById(R.id.result);
+
+        ImageView endImage = findViewById(R.id.result);
+        TextView scoreText = findViewById(R.id.scoreText);
 
         Bundle bundle = getIntent().getExtras();
 
+
         boolean perfect = bundle.getBoolean("perfect");
+        String score = bundle.getString("score");
 
         if(perfect){
-            endImage.setImageResource(R.drawable.africaicon);
+            endImage.setImageResource(R.drawable.perfectscore);
+            scoreText.setText(R.string.perfectscore);
         } else {
-            endImage.setImageResource(R.drawable.europeicon);
+            endImage.setImageResource(R.drawable.butterfly);
+            //scoreText.setText(R.string.score + score + R.string.ten);
         }
 
         Button quit = findViewById(R.id.quit);

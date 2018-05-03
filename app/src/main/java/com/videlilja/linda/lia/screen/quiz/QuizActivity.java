@@ -56,12 +56,12 @@ public class QuizActivity extends AppCompatActivity {
 
                     // 1 seconds delay
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
 
-                    if (rightAnswers < 3){
+                    if (rightAnswers < 10){
                         viewModel.setmQuiz(category);
                     } else {
                         if(rightAnswers == amountA){
@@ -70,9 +70,10 @@ public class QuizActivity extends AppCompatActivity {
                         // Spelet är slut, byt till EndOfGame
                         Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
 
-                        //Skicka med prefect
+                        //Skicka med prefect och score
                         Bundle bundle = new Bundle();
                         bundle.putBoolean("perfect", perfect);
+                        bundle.putString("score", Integer.toString(10 - (amountA - rightAnswers)));
                         intent.putExtras(bundle);
 
                         //Starta nästa activity
