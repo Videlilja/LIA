@@ -35,7 +35,7 @@ public class EndOfGameActivity extends AppCompatActivity {
             scoreText.setText(R.string.perfectscore);
         } else {
             endImage.setImageResource(R.drawable.butterfly);
-            //scoreText.setText(R.string.score + score + R.string.ten);
+            scoreText.setText(score);
         }
 
         Button quit = findViewById(R.id.quit);

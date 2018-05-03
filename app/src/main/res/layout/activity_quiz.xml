@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/pinkwave" />
+        app:srcCompat="@drawable/sandwave" />
 
     <TextView
         android:id="@+id/heading_quiz"
@@ -44,7 +44,7 @@
         android:gravity="center"
         android:text="@string/question_text"
         android:textAlignment="center"
-        android:textColor="@color/colorTertiary"
+        android:textColor="@color/colorDarkGray"
         android:textSize="21sp"
         app:layout_constraintDimensionRatio="w,1:10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
         android:fontFamily="casual"
         android:text="@string/sort_text"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorSecondaryDark"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
