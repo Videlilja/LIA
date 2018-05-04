@@ -16,6 +16,10 @@ import com.videlilja.linda.lia.screen.quiz.QuizActivity;
 
 public class EndOfGameActivity extends AppCompatActivity {
 
+    String notPerfect = "";
+    String strBefore = "";
+    String strAfter = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +30,6 @@ public class EndOfGameActivity extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
 
-
         boolean perfect = bundle.getBoolean("perfect");
         String score = bundle.getString("score");
 
@@ -35,7 +38,10 @@ public class EndOfGameActivity extends AppCompatActivity {
             scoreText.setText(R.string.perfectscore);
         } else {
             endImage.setImageResource(R.drawable.butterfly);
-            scoreText.setText(score);
+            strBefore = getString(R.string.score);
+            strAfter = getString(R.string.ten);
+            notPerfect = strBefore + " " + score + " " + strAfter;
+            scoreText.setText(notPerfect);
         }
 
         Button quit = findViewById(R.id.quit);

@@ -592,10 +592,10 @@
     <!-- Words -->
 
     <!-- End Screen -->
-    <string name="perfectscore">You got perfect score!!! 10 of 10</string>
+    <string name="perfectscore">Perfect score!!! 10 of 10</string>
     <string name="nice">Nice game!</string>
     <string name="score">You got </string>
-    <string name="ten">out of 10</string>
+    <string name="ten"> out of 10</string>
     <string name="end">Quit playing</string>
     <string name="home">New Game</string>
     <string name="retry">Retry Game</string>
