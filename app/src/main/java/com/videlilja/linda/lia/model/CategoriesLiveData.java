@@ -27,14 +27,14 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
                 setValue(natureCategories);
                 break;
 
-            case MATH:
+            /*case MATH:
                 List<Category> mathCategories = new ArrayList<>();
                 mathCategories.add(new Category(R.string.addition, Categories.ADDITION, R.drawable.mathicon));
                 mathCategories.add(new Category(R.string.subtraction, Categories.SUBTRACTION, R.drawable.mathicon));
                 mathCategories.add(new Category(R.string.multiplication, Categories.MULTIPLICATION, R.drawable.mathicon));
                 mathCategories.add(new Category(R.string.division, Categories.DIVISION, R.drawable.mathicon));
                 setValue(mathCategories);
-                break;
+                break;*/
 
             case FLAGS:
                 List<Category> flagCategories = new ArrayList<>();
@@ -49,18 +49,18 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
 
             case CAPITALS:
                 List<Category> capitalsCategories = new ArrayList<>();
-                capitalsCategories.add(new Category(R.string.africa, Categories.C_AFRICA, R.drawable.africaicon));
+                /*capitalsCategories.add(new Category(R.string.africa, Categories.C_AFRICA, R.drawable.africaicon));
                 capitalsCategories.add(new Category(R.string.asia, Categories.C_ASIA, R.drawable.asiaicon));
                 capitalsCategories.add(new Category(R.string.europe, Categories.C_EUROPE, R.drawable.europeicon));
                 capitalsCategories.add(new Category(R.string.north_america, Categories.C_NORTH_AMERICA, R.drawable.northamericaicon));
-                capitalsCategories.add(new Category(R.string.south_america, Categories.C_SOUTH_AMERICA, R.drawable.southamericaicon));
+                capitalsCategories.add(new Category(R.string.south_america, Categories.C_SOUTH_AMERICA, R.drawable.southamericaicon));*/
                 capitalsCategories.add(new Category(R.string.oceania, Categories.C_OCEANIA, R.drawable.australiaicon));
                 setValue(capitalsCategories);
                 break;
 
             case WORDS:
                 List<Category> wordsCategories = new ArrayList<>();
-                wordsCategories.add(new Category(R.string.pic_to_word, Categories.PIC_TO_WORD, R.drawable.wordtopicicon));
+                //wordsCategories.add(new Category(R.string.pic_to_word, Categories.PIC_TO_WORD, R.drawable.wordtopicicon));
                 wordsCategories.add(new Category(R.string.word_to_pic, Categories.WORD_TO_PIC, R.drawable.wordtopicicon));
                 setValue(wordsCategories);
                 break;

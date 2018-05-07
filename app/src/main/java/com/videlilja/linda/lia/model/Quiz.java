@@ -3,12 +3,14 @@ package com.videlilja.linda.lia.model;
 public class Quiz {
 
     private String mName;
+    private String mPicTxt;
     private int mImage;
     private String mQuestion;
 
 
-    public Quiz(String mName, int mImage, String mQuestion) {
+    public Quiz(String mName, String mPicTxt, int mImage, String mQuestion) {
         this.mName = mName;
+        this.mPicTxt = mPicTxt;
         this.mImage = mImage;
         this.mQuestion = mQuestion;
     }
@@ -19,6 +21,14 @@ public class Quiz {
 
     public void setmName(String mName) {
         this.mName = mName;
+    }
+
+    public String getmPicTxt() {
+        return mPicTxt;
+    }
+
+    public void setmPicTxt(String mPicTxt) {
+        this.mPicTxt = mPicTxt;
     }
 
     public int getmImage() {
