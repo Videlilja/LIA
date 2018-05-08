@@ -11,15 +11,16 @@ import com.videlilja.linda.lia.R;
 import com.videlilja.linda.lia.model.Quiz;
 
 public class QuizViewHolder extends RecyclerView.ViewHolder {
-    private TextView mQuestion;
+    //private TextView mQuestion;
     private TextView mLabel;
     private Quiz mQuiz;
     private ImageView mImage;
 
     public QuizViewHolder(View itemView, final OnQuizClickedListener listener) {
         super(itemView);
-        mQuestion = itemView.findViewById(R.id.question_text);
+        //mQuestion = itemView.findViewById(R.id.question_text);
         mImage = itemView.findViewById(R.id.quiz_image_view);
+        mLabel = itemView.findViewById(R.id.textonpic);
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +32,7 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(Quiz quiz) {
         mQuiz = quiz;
-        //mLabel.setText(quiz.getmName());
+        mLabel.setText(quiz.getmPicTxt());
         mImage.setImageResource(quiz.getmImage());
     }
     public static QuizViewHolder newInstance(final ViewGroup parent, OnQuizClickedListener listener) {

@@ -9,6 +9,8 @@ package com.videlilja.linda.lia.screen.quiz;
         import android.support.v7.app.AppCompatActivity;
         import android.support.v7.widget.GridLayoutManager;
         import android.support.v7.widget.RecyclerView;
+        import android.view.View;
+        import android.widget.Button;
         import android.widget.TextView;
         import com.videlilja.linda.lia.R;
         import com.videlilja.linda.lia.model.Categories;
@@ -54,30 +56,46 @@ public class QuizActivity extends AppCompatActivity {
 
 
 
-                    // 1 seconds delay
+                    // 0.5 seconds delay
                     try {
                         Thread.sleep(500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
 
-                    if (rightAnswers < 10){
-                        viewModel.setmQuiz(category);
+                    if (rightAnswers < 10 && rightAnswer){
+
+                        Button next = findViewById(R.id.next);
+                        next.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                                viewModel.setmQuiz(category);
+                            }
+                        });
+
                     } else {
                         if(rightAnswers == amountA){
                             perfect = true;
                         }
-                        // Spelet är slut, byt till EndOfGame
-                        Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
 
-                        //Skicka med prefect och score
-                        Bundle bundle = new Bundle();
-                        bundle.putBoolean("perfect", perfect);
-                        bundle.putString("score", Integer.toString(10 - (amountA - rightAnswers)));
-                        intent.putExtras(bundle);
+                        Button next = findViewById(R.id.next);
+                        next.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                // Spelet är slut, byt till EndOfGame
+                                Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
 
-                        //Starta nästa activity
-                        startActivity(intent);
+                                //Skicka med prefect och score
+                                Bundle bundle = new Bundle();
+                                bundle.putBoolean("perfect", perfect);
+                                bundle.putString("score", Integer.toString(10 - (amountA - rightAnswers)));
+                                intent.putExtras(bundle);
+
+                                //Starta nästa activity
+                                startActivity(intent);
+                            }
+                        });
                     }
                 } else {
                     //FEL SVAR
