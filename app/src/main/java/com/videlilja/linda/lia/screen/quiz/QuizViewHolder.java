@@ -26,6 +26,9 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(final View v) {
                 listener.onQuizClicked(mQuiz);
+                if (mQuiz.getBackgroundColor() != 0) {
+                    mImage.setBackgroundResource(mQuiz.getBackgroundColor());
+                }
             }
         });
     }
@@ -34,6 +37,7 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
         mQuiz = quiz;
         mLabel.setText(quiz.getmPicTxt());
         mImage.setImageResource(quiz.getmImage());
+        mImage.setBackgroundResource(R.color.colorLightGray);
     }
     public static QuizViewHolder newInstance(final ViewGroup parent, OnQuizClickedListener listener) {
         return new QuizViewHolder(

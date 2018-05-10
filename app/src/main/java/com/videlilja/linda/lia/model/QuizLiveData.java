@@ -428,71 +428,71 @@ public class QuizLiveData extends LiveData<List<Quiz>> {
 
             case C_AFRICA:
                 List<Quiz> capitalsAfrica = new ArrayList<>();
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_algeria_dz), context.getString(R.string.ca_af_algeria_dz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_angola_ao), context.getString(R.string.ca_af_angola_ao), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_benin_bj), context.getString(R.string.ca_af_benin_bj), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_botswana_bw), context.getString(R.string.ca_af_botswana_bw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_burkina_faso_bf), context.getString(R.string.ca_af_burkina_faso_bf), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_algeria_dz), context.getString(R.string.ca_af_algeria_dz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_angola_ao), context.getString(R.string.ca_af_angola_ao), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_benin_bj), context.getString(R.string.ca_af_benin_bj), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_botswana_bw), context.getString(R.string.ca_af_botswana_bw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_burkina_faso_bf), context.getString(R.string.ca_af_burkina_faso_bf), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_burundi_bi), context.getString(R.string.ca_af_burundi_bi), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_cameroon_cm), context.getString(R.string.ca_af_cameroon_cm), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_cape_verde_cv), context.getString(R.string.ca_af_cape_verde_cv), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_the_central_african_republic_cf), context.getString(R.string.ca_af_the_central_african_republic_cf), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_chad_td), context.getString(R.string.ca_af_chad_td), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_burundi_bi), context.getString(R.string.ca_af_burundi_bi), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_cameroon_cm), context.getString(R.string.ca_af_cameroon_cm), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_cape_verde_cv), context.getString(R.string.ca_af_cape_verde_cv), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_the_central_african_republic_cf), context.getString(R.string.ca_af_the_central_african_republic_cf), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_chad_td), context.getString(R.string.ca_af_chad_td), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_the_comoros_km), context.getString(R.string.ca_af_the_comoros_km), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_ivory_coast_ci), context.getString(R.string.ca_af_ivory_coast_ci), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_the_democratic_republic_of_the_congo_cd), context.getString(R.string.ca_af_the_democratic_republic_of_the_congo_cd), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_djibouti_dj), context.getString(R.string.ca_af_djibouti_dj), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_egypt_eg), context.getString(R.string.ca_af_egypt_eg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_the_comoros_km), context.getString(R.string.ca_af_the_comoros_km), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_ivory_coast_ci), context.getString(R.string.ca_af_ivory_coast_ci), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_the_democratic_republic_of_the_congo_cd), context.getString(R.string.ca_af_the_democratic_republic_of_the_congo_cd), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_djibouti_dj), context.getString(R.string.ca_af_djibouti_dj), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_egypt_eg), context.getString(R.string.ca_af_egypt_eg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_equatorial_guinea_gq), context.getString(R.string.ca_af_equatorial_guinea_gq), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_eritrea_er), context.getString(R.string.ca_af_eritrea_er), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_ethiopia_et), context.getString(R.string.ca_af_ethiopia_et), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_gabon_ga), context.getString(R.string.ca_af_gabon_ga), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_the_gambia_gm), context.getString(R.string.ca_af_the_gambia_gm), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_equatorial_guinea_gq), context.getString(R.string.ca_af_equatorial_guinea_gq), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_eritrea_er), context.getString(R.string.ca_af_eritrea_er), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_ethiopia_et), context.getString(R.string.ca_af_ethiopia_et), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_gabon_ga), context.getString(R.string.ca_af_gabon_ga), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_the_gambia_gm), context.getString(R.string.ca_af_the_gambia_gm), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_ghana_gh), context.getString(R.string.ca_af_ghana_gh), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_guinea_gn), context.getString(R.string.ca_af_guinea_gn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_guinea_bissau_gw), context.getString(R.string.ca_af_guinea_bissau_gw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_kenya_ke), context.getString(R.string.ca_af_kenya_ke), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_lesotho_ls), context.getString(R.string.ca_af_lesotho_ls), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_ghana_gh), context.getString(R.string.ca_af_ghana_gh), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_guinea_gn), context.getString(R.string.ca_af_guinea_gn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_guinea_bissau_gw), context.getString(R.string.ca_af_guinea_bissau_gw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_kenya_ke), context.getString(R.string.ca_af_kenya_ke), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_lesotho_ls), context.getString(R.string.ca_af_lesotho_ls), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_liberia_lr), context.getString(R.string.ca_af_liberia_lr), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_libya_ly), context.getString(R.string.ca_af_libya_ly), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_madagascar_mg), context.getString(R.string.ca_af_madagascar_mg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_malawi_mw), context.getString(R.string.ca_af_malawi_mw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_mali_ml), context.getString(R.string.ca_af_mali_ml), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_liberia_lr), context.getString(R.string.ca_af_liberia_lr), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_libya_ly), context.getString(R.string.ca_af_libya_ly), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_madagascar_mg), context.getString(R.string.ca_af_madagascar_mg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_malawi_mw), context.getString(R.string.ca_af_malawi_mw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_mali_ml), context.getString(R.string.ca_af_mali_ml), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_mauritania_mr), context.getString(R.string.ca_af_mauritania_mr), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_mauritius_mu), context.getString(R.string.ca_af_mauritius_mu), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_morocco_ma), context.getString(R.string.ca_af_morocco_ma), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_mozambique_mz), context.getString(R.string.ca_af_mozambique_mz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_namibia_na), context.getString(R.string.ca_af_namibia_na), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_mauritania_mr), context.getString(R.string.ca_af_mauritania_mr), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_mauritius_mu), context.getString(R.string.ca_af_mauritius_mu), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_morocco_ma), context.getString(R.string.ca_af_morocco_ma), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_mozambique_mz), context.getString(R.string.ca_af_mozambique_mz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_namibia_na), context.getString(R.string.ca_af_namibia_na), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_niger_ne), context.getString(R.string.ca_af_niger_ne), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_nigeria_ng), context.getString(R.string.ca_af_nigeria_ng), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_the_republic_of_the_congo_cg), context.getString(R.string.ca_af_the_republic_of_the_congo_cg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_rwanda_rw), context.getString(R.string.ca_af_rwanda_rw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_sao_tome_and_principe_st), context.getString(R.string.ca_af_sao_tome_and_principe_st), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_niger_ne), context.getString(R.string.ca_af_niger_ne), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_nigeria_ng), context.getString(R.string.ca_af_nigeria_ng), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_the_republic_of_the_congo_cg), context.getString(R.string.ca_af_the_republic_of_the_congo_cg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_rwanda_rw), context.getString(R.string.ca_af_rwanda_rw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_sao_tome_and_principe_st), context.getString(R.string.ca_af_sao_tome_and_principe_st), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_senegal_sn), context.getString(R.string.ca_af_senegal_sn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_the_seychelles_sc), context.getString(R.string.ca_af_the_seychelles_sc), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_sierra_leone_sl), context.getString(R.string.ca_af_sierra_leone_sl), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_somalia_so), context.getString(R.string.ca_af_somalia_so), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_south_africa_za), context.getString(R.string.ca_af_south_africa_za), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_senegal_sn), context.getString(R.string.ca_af_senegal_sn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_the_seychelles_sc), context.getString(R.string.ca_af_the_seychelles_sc), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_sierra_leone_sl), context.getString(R.string.ca_af_sierra_leone_sl), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_somalia_so), context.getString(R.string.ca_af_somalia_so), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_south_africa_za), context.getString(R.string.ca_af_south_africa_za), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_south_sudan_sdn), context.getString(R.string.ca_af_south_sudan_sdn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_sudan_sd), context.getString(R.string.ca_af_sudan_sd), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_swaziland_sz), context.getString(R.string.ca_af_swaziland_sz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_tanzania_tz), context.getString(R.string.ca_af_tanzania_tz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_togo_tg), context.getString(R.string.ca_af_togo_tg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_south_sudan_sdn), context.getString(R.string.ca_af_south_sudan_sdn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_sudan_sd), context.getString(R.string.ca_af_sudan_sd), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_swaziland_sz), context.getString(R.string.ca_af_swaziland_sz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_tanzania_tz), context.getString(R.string.ca_af_tanzania_tz), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_togo_tg), context.getString(R.string.ca_af_togo_tg), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
 
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_tunisia_tn), context.getString(R.string.ca_af_tunisia_tn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_uganda_ug), context.getString(R.string.ca_af_uganda_ug), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_western_sahara_eh), context.getString(R.string.ca_af_western_sahara_eh), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_zambia_zm), context.getString(R.string.ca_af_zambia_zm), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
-                capitalsAfrica.add(new Quiz(context.getString(R.string.ca_af_zimbabwe_zw), context.getString(R.string.ca_af_zimbabwe_zw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_tunisia_tn), context.getString(R.string.ca_af_tunisia_tn), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_uganda_ug), context.getString(R.string.ca_af_uganda_ug), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_western_sahara_eh), context.getString(R.string.ca_af_western_sahara_eh), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_zambia_zm), context.getString(R.string.ca_af_zambia_zm), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
+                capitalsAfrica.add(new Quiz(context.getString(R.string.fl_af_zimbabwe_zw), context.getString(R.string.ca_af_zimbabwe_zw), R.drawable.capitalsicon, context.getString(R.string.capital_question)));
                 setValue(capitalsAfrica);
                 break;
 

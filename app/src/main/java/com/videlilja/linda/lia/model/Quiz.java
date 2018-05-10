@@ -6,6 +6,7 @@ public class Quiz {
     private String mPicTxt;
     private int mImage;
     private String mQuestion;
+    private int backgroundColor;
 
 
     public Quiz(String mName, String mPicTxt, int mImage, String mQuestion) {
@@ -13,6 +14,14 @@ public class Quiz {
         this.mPicTxt = mPicTxt;
         this.mImage = mImage;
         this.mQuestion = mQuestion;
+    }
+
+    public int getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public void setBackgroundColor(int backgroundColor) {
+        this.backgroundColor = backgroundColor;
     }
 
     public String getmName() {

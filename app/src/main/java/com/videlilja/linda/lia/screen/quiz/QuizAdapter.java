@@ -10,9 +10,9 @@ import java.util.List;
 public class QuizAdapter extends RecyclerView.Adapter<QuizViewHolder> {
     private List<Quiz> mQuizList = new ArrayList<>();
     private OnQuizClickedListener mQuizClickListener;
-    public QuizAdapter(OnQuizClickedListener quizClickedListener) {
+    /*public QuizAdapter(OnQuizClickedListener quizClickedListener) {
         mQuizClickListener = quizClickedListener;
-    }
+    }*/
     public void setQuizList(final List<Quiz> quizList) {
         mQuizList = quizList;
         notifyDataSetChanged();
@@ -29,4 +29,9 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizViewHolder> {
     public void onBindViewHolder(QuizViewHolder holder, int position) {
         holder.bind(mQuizList.get(position));
     }
+
+    public void setmQuizClickListener(OnQuizClickedListener quizClickListener) {
+        this.mQuizClickListener = quizClickListener;
+    }
+
 }

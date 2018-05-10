@@ -47,72 +47,78 @@ public class QuizActivity extends AppCompatActivity {
         next.setEnabled(false);
         next.setBackgroundColor(getResources().getColor(R.color.noColor));
 
-        final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
+        final QuizAdapter adapter = new QuizAdapter();
+
+
+        adapter.setmQuizClickListener(new OnQuizClickedListener() {
 
             @Override
             public void onQuizClicked(final Quiz quiz) {
-                if (quiz == viewModel.getmRightAnswer()) {
-                    //RÄTT SVAR
-                    rightAnswer = true;
-                    rightAnswers = rightAnswers + 1;
-                    amountA = amountA + 1;
-                    Button next = findViewById(R.id.next);
-                    next.setEnabled(true);
-                    next.setBackgroundColor(getResources().getColor(R.color.colorSecondary));
-                    // Läs in listan igen med förändrad bakgrund
+                if (!rightAnswer) {
+                    if (quiz == viewModel.getmRightAnswer()) {
+                        //RÄTT SVAR
+                        rightAnswer = true;
+                        rightAnswers = rightAnswers + 1;
+                        amountA = amountA + 1;
+                        Button next = findViewById(R.id.next);
+                        next.setEnabled(true);
+                        next.setBackgroundColor(getResources().getColor(R.color.colorSecondary));
+                        // Läs in listan igen med förändrad bakgrund
+                        quiz.setBackgroundColor(R.color.colorGreen);
 
-
-                    // 0.5 seconds delay
-                    try {
-                        Thread.sleep(500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    if (rightAnswers < 3){
-
-                        next.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                Button next = findViewById(R.id.next);
-                                next.setEnabled(false);
-                                next.setBackgroundColor(getResources().getColor(R.color.noColor));
-                                viewModel.setmQuiz(category);
-                            }
-                        });
-
-                    } else {
-                        if(rightAnswers == amountA){
-                            perfect = true;
+                        // 0.5 seconds delay
+                        try {
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
                         }
 
-                        next.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                // Spelet är slut, byt till EndOfGame
-                                Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
+                        if (rightAnswers < 10) {
 
-                                //Skicka med prefect och score
-                                Bundle bundle = new Bundle();
-                                bundle.putBoolean("perfect", perfect);
-                                bundle.putString("score", Integer.toString(10 - (amountA - rightAnswers)));
-                                bundle.putSerializable("action", category);
-                                intent.putExtras(bundle);
+                            next.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    Button next = findViewById(R.id.next);
+                                    next.setEnabled(false);
+                                    next.setBackgroundColor(getResources().getColor(R.color.noColor));
+                                    viewModel.setmQuiz(category);
+                                }
+                            });
 
-                                //Starta nästa activity
-                                startActivity(intent);
-                                finish();
+                        } else {
+                            if (rightAnswers == amountA) {
+                                perfect = true;
                             }
-                        });
+
+                            next.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    // Spelet är slut, byt till EndOfGame
+                                    Intent intent = new Intent(getApplicationContext(), EndOfGameActivity.class);
+
+                                    //Skicka med prefect och score
+                                    Bundle bundle = new Bundle();
+                                    bundle.putBoolean("perfect", perfect);
+                                    bundle.putString("score", Integer.toString(10 - (amountA - rightAnswers)));
+                                    bundle.putSerializable("action", category);
+                                    intent.putExtras(bundle);
+
+                                    //Starta nästa activity
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            });
+                        }
+                    } else {
+                        //FEL SVAR
+                        quiz.setBackgroundColor(R.color.colorRed);
+                        rightAnswer = false;
+                        amountA = amountA + 1;
+                        Button next = findViewById(R.id.next);
+                        next.setEnabled(false);
+                        next.setBackgroundColor(getResources().getColor(R.color.noColor));
+                        next.getShadowColor();
                     }
-                } else {
-                    //FEL SVAR
-                    rightAnswer = false;
-                    amountA = amountA + 1;
-                    Button next = findViewById(R.id.next);
-                    next.setEnabled(false);
-                    next.setBackgroundColor(getResources().getColor(R.color.noColor));
-                    next.getShadowColor();
                 }
             }
         });
@@ -120,6 +126,7 @@ public class QuizActivity extends AppCompatActivity {
         viewModel.getQuiz().observe(this, new Observer<List<Quiz>>() {
             @Override
             public void onChanged(@Nullable final List<Quiz> quizzes) {
+                rightAnswer = false;
                 adapter.setQuizList(quizzes);
                 sortTxt.setText(viewModel.getmRightAnswer().getmName());
             }
