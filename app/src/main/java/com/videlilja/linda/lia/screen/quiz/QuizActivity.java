@@ -43,6 +43,10 @@ public class QuizActivity extends AppCompatActivity {
         final TextView questionTxt = findViewById(R.id.question_text);
         questionTxt.setText(viewModel.getmRightAnswer().getmQuestion());
 
+        Button next = findViewById(R.id.next);
+        next.setEnabled(false);
+        next.setBackgroundColor(getResources().getColor(R.color.noColor));
+
         final QuizAdapter adapter = new QuizAdapter(new OnQuizClickedListener() {
 
             @Override
@@ -52,8 +56,10 @@ public class QuizActivity extends AppCompatActivity {
                     rightAnswer = true;
                     rightAnswers = rightAnswers + 1;
                     amountA = amountA + 1;
+                    Button next = findViewById(R.id.next);
+                    next.setEnabled(true);
+                    next.setBackgroundColor(getResources().getColor(R.color.colorSecondary));
                     // Läs in listan igen med förändrad bakgrund
-
 
 
                     // 0.5 seconds delay
@@ -63,13 +69,14 @@ public class QuizActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-                    if (rightAnswers < 10 && rightAnswer){
+                    if (rightAnswers < 3){
 
-                        Button next = findViewById(R.id.next);
                         next.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-
+                                Button next = findViewById(R.id.next);
+                                next.setEnabled(false);
+                                next.setBackgroundColor(getResources().getColor(R.color.noColor));
                                 viewModel.setmQuiz(category);
                             }
                         });
@@ -79,7 +86,6 @@ public class QuizActivity extends AppCompatActivity {
                             perfect = true;
                         }
 
-                        Button next = findViewById(R.id.next);
                         next.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -90,10 +96,12 @@ public class QuizActivity extends AppCompatActivity {
                                 Bundle bundle = new Bundle();
                                 bundle.putBoolean("perfect", perfect);
                                 bundle.putString("score", Integer.toString(10 - (amountA - rightAnswers)));
+                                bundle.putSerializable("action", category);
                                 intent.putExtras(bundle);
 
                                 //Starta nästa activity
                                 startActivity(intent);
+                                finish();
                             }
                         });
                     }
@@ -101,6 +109,10 @@ public class QuizActivity extends AppCompatActivity {
                     //FEL SVAR
                     rightAnswer = false;
                     amountA = amountA + 1;
+                    Button next = findViewById(R.id.next);
+                    next.setEnabled(false);
+                    next.setBackgroundColor(getResources().getColor(R.color.noColor));
+                    next.getShadowColor();
                 }
             }
         });
