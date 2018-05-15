@@ -29,7 +29,7 @@
         android:layout_marginStart="8dp"
         android:background="@drawable/rounded_button"
         android:elevation="32dp"
-        android:fontFamily="casual"
+        android:fontFamily="@font/amaranth_bold"
         android:gravity="center"
         android:text="@string/start_games_text"
         android:textAlignment="center"

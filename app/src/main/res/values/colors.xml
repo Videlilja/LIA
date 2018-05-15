@@ -16,4 +16,10 @@
     <color name="colorDarkGray">#707070</color>
     <color name="colorMediumGray">#C4C4C4</color>
     <color name="colorLightGray">#dbdbdb</color>
+
+    <color name="noColor">#00FF0000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorBlue">#0000FF</color>
+
 </resources>

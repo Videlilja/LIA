@@ -27,14 +27,14 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
                 setValue(natureCategories);
                 break;
 
-            case MATH:
+            /*case MATH:
                 List<Category> mathCategories = new ArrayList<>();
                 mathCategories.add(new Category(R.string.addition, Categories.ADDITION, R.drawable.mathicon));
                 mathCategories.add(new Category(R.string.subtraction, Categories.SUBTRACTION, R.drawable.mathicon));
                 mathCategories.add(new Category(R.string.multiplication, Categories.MULTIPLICATION, R.drawable.mathicon));
                 mathCategories.add(new Category(R.string.division, Categories.DIVISION, R.drawable.mathicon));
                 setValue(mathCategories);
-                break;
+                break;*/
 
             case FLAGS:
                 List<Category> flagCategories = new ArrayList<>();
@@ -60,7 +60,7 @@ public class CategoriesLiveData extends LiveData<List<Category>> {
 
             case WORDS:
                 List<Category> wordsCategories = new ArrayList<>();
-                wordsCategories.add(new Category(R.string.pic_to_word, Categories.PIC_TO_WORD, R.drawable.wordtopicicon));
+                //wordsCategories.add(new Category(R.string.pic_to_word, Categories.PIC_TO_WORD, R.drawable.wordtopicicon));
                 wordsCategories.add(new Category(R.string.word_to_pic, Categories.WORD_TO_PIC, R.drawable.wordtopicicon));
                 setValue(wordsCategories);
                 break;

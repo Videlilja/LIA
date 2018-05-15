@@ -4,13 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.videlilja.linda.lia.R;
+import com.videlilja.linda.lia.model.Categories;
+import com.videlilja.linda.lia.model.Category;
 import com.videlilja.linda.lia.screen.home.HomeActivity;
 import com.videlilja.linda.lia.screen.quiz.QuizActivity;
 
@@ -32,6 +36,8 @@ public class EndOfGameActivity extends AppCompatActivity {
 
         boolean perfect = bundle.getBoolean("perfect");
         String score = bundle.getString("score");
+        final Categories category = (Categories) bundle.getSerializable("action");
+        //Toast.makeText(this, "bla bla bla" + category, Toast.LENGTH_SHORT).show();
 
         if(perfect){
             endImage.setImageResource(R.drawable.perfectscore);
@@ -57,7 +63,9 @@ public class EndOfGameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -65,6 +73,7 @@ public class EndOfGameActivity extends AppCompatActivity {
         repeat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                QuizActivity.start(getApplicationContext(), category);
                 finish();
             }
         });
