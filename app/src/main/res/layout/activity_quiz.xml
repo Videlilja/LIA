@@ -62,7 +62,7 @@
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@color/colorLightGray"
+        android:background="@drawable/rounded_button_grey"
         android:text="@string/q_button_text"
         android:textAllCaps="false"
         android:textColor="@color/colorDarkGray"
