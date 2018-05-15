@@ -53,6 +53,7 @@ public class CategoriesActivity extends AppCompatActivity {
     public static void start(Context context, Games action){
         Intent intent = new Intent(context, CategoriesActivity.class);
         intent.putExtra("game", action);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
 

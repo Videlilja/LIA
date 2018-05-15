@@ -138,6 +138,7 @@ public class QuizActivity extends AppCompatActivity {
     }
     public static void start(Context context, Categories action){
         Intent intent = new Intent(context, QuizActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("category", action);
         context.startActivity(intent);
     }
