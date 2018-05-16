@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kul Kunskap</string>
+    <string name="app_name">Minoo</string>
     <string name="start_games_text">Start</string>
     <string name="title_activity_nature_herbs">Herbs</string>
     <string name="home_text">Games</string>
@@ -373,220 +373,220 @@
 
     <!-- Capitals Africa -->
     <string name="ca_af_algeria_dz">Algiers</string>
-    <string name="ca_af_angola_ao">Luanda</string>
-    <string name="ca_af_benin_bj">Porto-Novo</string>
-    <string name="ca_af_botswana_bw">Gaborone</string>
-    <string name="ca_af_burkina_faso_bf">Ouagadougou</string>
-    <string name="ca_af_burundi_bi">Bujumbura</string>
-    <string name="ca_af_cameroon_cm">Yaoundndé</string>
-    <string name="ca_af_cape_verde_cv">Praia</string>
-    <string name="ca_af_the_central_african_republic_cf">Bangui</string>
-    <string name="ca_af_chad_td">N\'Djamena</string>
-    <string name="ca_af_the_comoros_km">Moroni</string>
-    <string name="ca_af_ivory_coast_ci">Yamoussoukro</string>
-    <string name="ca_af_the_democratic_republic_of_the_congo_cd">Kinshasa</string>
-    <string name="ca_af_djibouti_dj">Djibouti</string>
+    <string name="ca_af_angola_ao" translatable="false">Luanda</string>
+    <string name="ca_af_benin_bj" translatable="false">Porto-Novo</string>
+    <string name="ca_af_botswana_bw" translatable="false">Gaborone</string>
+    <string name="ca_af_burkina_faso_bf" translatable="false">Ouagadougou</string>
+    <string name="ca_af_burundi_bi" translatable="false">Bujumbura</string>
+    <string name="ca_af_cameroon_cm" translatable="false">Yaoundndé</string>
+    <string name="ca_af_cape_verde_cv" translatable="false">Praia</string>
+    <string name="ca_af_the_central_african_republic_cf" translatable="false">Bangui</string>
+    <string name="ca_af_chad_td" translatable="false">N\'Djamena</string>
+    <string name="ca_af_the_comoros_km" translatable="false">Moroni</string>
+    <string name="ca_af_ivory_coast_ci" translatable="false">Yamoussoukro</string>
+    <string name="ca_af_the_democratic_republic_of_the_congo_cd" translatable="false">Kinshasa</string>
+    <string name="ca_af_djibouti_dj" translatable="false">Djibouti</string>
     <string name="ca_af_egypt_eg">Cairo</string>
-    <string name="ca_af_equatorial_guinea_gq">Malabo</string>
-    <string name="ca_af_eritrea_er">Asmara</string>
+    <string name="ca_af_equatorial_guinea_gq" translatable="false">Malabo</string>
+    <string name="ca_af_eritrea_er" translatable="false">Asmara</string>
     <string name="ca_af_ethiopia_et">Addis Ababa</string>
-    <string name="ca_af_gabon_ga">Libreville</string>
-    <string name="ca_af_the_gambia_gm">Banjul</string>
-    <string name="ca_af_ghana_gh">Accra</string>
-    <string name="ca_af_guinea_gn">Conakry</string>
-    <string name="ca_af_guinea_bissau_gw">Bissau</string>
-    <string name="ca_af_kenya_ke">Nairobi</string>
-    <string name="ca_af_lesotho_ls">Maseru</string>
-    <string name="ca_af_liberia_lr">Monrovia</string>
-    <string name="ca_af_libya_ly">Tripoli</string>
-    <string name="ca_af_madagascar_mg">Antananarivo</string>
-    <string name="ca_af_malawi_mw">Lilongwe</string>
-    <string name="ca_af_mali_ml">Bamako</string>
-    <string name="ca_af_mauritania_mr">Nouakchott</string>
-    <string name="ca_af_mauritius_mu">Port Louis</string>
-    <string name="ca_af_morocco_ma">Rabat</string>
-    <string name="ca_af_mozambique_mz">Maputo</string>
-    <string name="ca_af_namibia_na">Windhoek</string>
-    <string name="ca_af_niger_ne">Niamey</string>
-    <string name="ca_af_nigeria_ng">Abuja</string>
-    <string name="ca_af_the_republic_of_the_congo_cg">Brazzaville</string>
-    <string name="ca_af_rwanda_rw">Kigali</string>
-    <string name="ca_af_sao_tome_and_principe_st">São Tomé</string>
-    <string name="ca_af_senegal_sn">Dakar</string>
-    <string name="ca_af_the_seychelles_sc">Victoria</string>
-    <string name="ca_af_sierra_leone_sl">Freetown</string>
-    <string name="ca_af_somalia_so">Mogadishu</string>
-    <string name="ca_af_south_africa_za">Pretoria</string>
-    <string name="ca_af_south_sudan_sdn">Juba</string>
-    <string name="ca_af_sudan_sd">Khartoum</string>
-    <string name="ca_af_swaziland_sz">Mbabane</string>
-    <string name="ca_af_tanzania_tz">Dodoma</string>
-    <string name="ca_af_togo_tg">Lomé</string>
-    <string name="ca_af_tunisia_tn">Tunis</string>
-    <string name="ca_af_uganda_ug">Kampala</string>
-    <string name="ca_af_western_sahara_eh">Laayoune</string>
-    <string name="ca_af_zambia_zm">Lusaka</string>
-    <string name="ca_af_zimbabwe_zw">Harare</string>
+    <string name="ca_af_gabon_ga" translatable="false">Libreville</string>
+    <string name="ca_af_the_gambia_gm" translatable="false">Banjul</string>
+    <string name="ca_af_ghana_gh" translatable="false">Accra</string>
+    <string name="ca_af_guinea_gn" translatable="false">Conakry</string>
+    <string name="ca_af_guinea_bissau_gw" translatable="false">Bissau</string>
+    <string name="ca_af_kenya_ke" translatable="false">Nairobi</string>
+    <string name="ca_af_lesotho_ls" translatable="false">Maseru</string>
+    <string name="ca_af_liberia_lr" translatable="false">Monrovia</string>
+    <string name="ca_af_libya_ly" translatable="false">Tripoli</string>
+    <string name="ca_af_madagascar_mg" translatable="false">Antananarivo</string>
+    <string name="ca_af_malawi_mw" translatable="false">Lilongwe</string>
+    <string name="ca_af_mali_ml" translatable="false">Bamako</string>
+    <string name="ca_af_mauritania_mr" translatable="false">Nouakchott</string>
+    <string name="ca_af_mauritius_mu" translatable="false">Port Louis</string>
+    <string name="ca_af_morocco_ma" translatable="false">Rabat</string>
+    <string name="ca_af_mozambique_mz" translatable="false">Maputo</string>
+    <string name="ca_af_namibia_na" translatable="false">Windhoek</string>
+    <string name="ca_af_niger_ne" translatable="false">Niamey</string>
+    <string name="ca_af_nigeria_ng" translatable="false">Abuja</string>
+    <string name="ca_af_the_republic_of_the_congo_cg" translatable="false">Brazzaville</string>
+    <string name="ca_af_rwanda_rw" translatable="false">Kigali</string>
+    <string name="ca_af_sao_tome_and_principe_st" translatable="false">São Tomé</string>
+    <string name="ca_af_senegal_sn" translatable="false">Dakar</string>
+    <string name="ca_af_the_seychelles_sc" translatable="false">Victoria</string>
+    <string name="ca_af_sierra_leone_sl" translatable="false">Freetown</string>
+    <string name="ca_af_somalia_so" translatable="false">Mogadishu</string>
+    <string name="ca_af_south_africa_za" translatable="false">Pretoria</string>
+    <string name="ca_af_south_sudan_sdn" translatable="false">Juba</string>
+    <string name="ca_af_sudan_sd" translatable="false">Khartoum</string>
+    <string name="ca_af_swaziland_sz" translatable="false">Mbabane</string>
+    <string name="ca_af_tanzania_tz" translatable="false">Dodoma</string>
+    <string name="ca_af_togo_tg" translatable="false">Lomé</string>
+    <string name="ca_af_tunisia_tn" translatable="false">Tunis</string>
+    <string name="ca_af_uganda_ug" translatable="false">Kampala</string>
+    <string name="ca_af_western_sahara_eh" translatable="false">Laayoune</string>
+    <string name="ca_af_zambia_zm" translatable="false">Lusaka</string>
+    <string name="ca_af_zimbabwe_zw" translatable="false">Harare</string>
 
     <!-- Capitals Asia -->
-    <string name="ca_as_afghanistan_af">Kabul</string>
-    <string name="ca_as_armenia_am">Yerevan</string>
-    <string name="ca_as_azerbaijan_az">Baku</string>
-    <string name="ca_as_bahrain_bh">Manama</string>
-    <string name="ca_as_bangladesh_bd">Dhaka</string>
-    <string name="ca_as_bhutan_bt">Thimphu</string>
-    <string name="ca_as_brunei_bn">Bandar Seri Begawan</string>
-    <string name="ca_as_cambodia_kh">Phnom Penh</string>
-    <string name="ca_as_cyprus_cy">Nicosia</string>
-    <string name="ca_as_east_timor_tl">Dili</string>
+    <string name="ca_as_afghanistan_af" translatable="false">Kabul</string>
+    <string name="ca_as_armenia_am" translatable="false">Yerevan</string>
+    <string name="ca_as_azerbaijan_az" translatable="false">Baku</string>
+    <string name="ca_as_bahrain_bh" translatable="false">Manama</string>
+    <string name="ca_as_bangladesh_bd" translatable="false">Dhaka</string>
+    <string name="ca_as_bhutan_bt" translatable="false">Thimphu</string>
+    <string name="ca_as_brunei_bn" translatable="false">Bandar Seri Begawan</string>
+    <string name="ca_as_cambodia_kh" translatable="false">Phnom Penh</string>
+    <string name="ca_as_cyprus_cy" translatable="false">Nicosia</string>
+    <string name="ca_as_east_timor_tl" translatable="false">Dili</string>
     <string name="ca_as_egypt_eg">Cairo</string>
-    <string name="ca_as_georgia_ge">Tbilisi</string>
-    <string name="ca_as_india_in">New Delhi</string>
-    <string name="ca_as_indonesia_id">Jakarta</string>
+    <string name="ca_as_georgia_ge" translatable="false">Tbilisi</string>
+    <string name="ca_as_india_in" translatable="false">New Delhi</string>
+    <string name="ca_as_indonesia_id" translatable="false">Jakarta</string>
     <string name="ca_as_iran_ir">Tehran</string>
     <string name="ca_as_iraq_iq">Baghdad</string>
-    <string name="ca_as_israel_il">Jerusalem</string>
-    <string name="ca_as_japan_jp">Tokyo</string>
-    <string name="ca_as_jordan_jo">Amman</string>
-    <string name="ca_as_kazakhstan_kz">Astana</string>
-    <string name="ca_as_kuwait_kw">Kuwait City</string>
-    <string name="ca_as_kyrgyzstan_kg">Bishkek</string>
-    <string name="ca_as_laos_la">Vientiane</string>
-    <string name="ca_as_lebanon_lb">Beirut</string>
-    <string name="ca_as_malaysia_my">Kuala Lumpur</string>
-    <string name="ca_as_maldives_mv">Malé</string>
-    <string name="ca_as_mongolia_mn">Ulaanbaatar</string>
-    <string name="ca_as_myanmar_mm">Naypyidaw</string>
-    <string name="ca_as_nepal_np">Kathmandu</string>
-    <string name="ca_as_north_korea_kp">Pyongyang</string>
-    <string name="ca_as_oman_om">Muscat</string>
-    <string name="ca_as_pakistan_pk">Islamabad</string>
+    <string name="ca_as_israel_il" translatable="false">Jerusalem</string>
+    <string name="ca_as_japan_jp" translatable="false">Tokyo</string>
+    <string name="ca_as_jordan_jo" translatable="false">Amman</string>
+    <string name="ca_as_kazakhstan_kz" translatable="false">Astana</string>
+    <string name="ca_as_kuwait_kw" translatable="false">Kuwait City</string>
+    <string name="ca_as_kyrgyzstan_kg" translatable="false">Bishkek</string>
+    <string name="ca_as_laos_la" translatable="false">Vientiane</string>
+    <string name="ca_as_lebanon_lb" translatable="false">Beirut</string>
+    <string name="ca_as_malaysia_my" translatable="false">Kuala Lumpur</string>
+    <string name="ca_as_maldives_mv" translatable="false">Malé</string>
+    <string name="ca_as_mongolia_mn" translatable="false">Ulaanbaatar</string>
+    <string name="ca_as_myanmar_mm" translatable="false">Naypyidaw</string>
+    <string name="ca_as_nepal_np" translatable="false">Kathmandu</string>
+    <string name="ca_as_north_korea_kp" translatable="false">Pyongyang</string>
+    <string name="ca_as_oman_om" translatable="false">Muscat</string>
+    <string name="ca_as_pakistan_pk" translatable="false">Islamabad</string>
     <string name="ca_as_the_peoples_republic_of_china_cn">Beijing</string>
-    <string name="ca_as_the_philippines_ph">Manila</string>
-    <string name="ca_as_qatar_qa">Doha</string>
-    <string name="ca_as_the_republic_of_china_tw">Taipei</string>
+    <string name="ca_as_the_philippines_ph" translatable="false">Manila</string>
+    <string name="ca_as_qatar_qa" translatable="false">Doha</string>
+    <string name="ca_as_the_republic_of_china_tw" translatable="false">Taipei</string>
     <string name="ca_as_russia_ru">Moscow</string>
-    <string name="ca_as_saudi_arabia_sa">Riyadh</string>
-    <string name="ca_as_singapore_sg">Singapore</string>
-    <string name="ca_as_south_korea_kr">Seoul</string>
-    <string name="ca_as_sri_lanka_lk">Colombo</string>
+    <string name="ca_as_saudi_arabia_sa" translatable="false">Riyadh</string>
+    <string name="ca_as_singapore_sg" translatable="false">Singapore</string>
+    <string name="ca_as_south_korea_kr" translatable="false">Seoul</string>
+    <string name="ca_as_sri_lanka_lk" translatable="false">Colombo</string>
     <string name="ca_as_syria_sy">Damascus</string>
-    <string name="ca_as_tajikistan_tj">Dushanbe</string>
-    <string name="ca_as_thailand_th">Bangkok</string>
-    <string name="ca_as_turkey_tr">Ankara</string>
-    <string name="ca_as_turkmenistan_tm">Ashgabat</string>
-    <string name="ca_as_the_united_arab_emirates_ae">Abu Dhabi</string>
-    <string name="ca_as_uzbekistan_uz">Tashkent</string>
-    <string name="ca_as_vietnam_vn">Hanoi</string>
-    <string name="ca_as_yemen_ye">Sanaá</string>
+    <string name="ca_as_tajikistan_tj" translatable="false">Dushanbe</string>
+    <string name="ca_as_thailand_th" translatable="false">Bangkok</string>
+    <string name="ca_as_turkey_tr" translatable="false">Ankara</string>
+    <string name="ca_as_turkmenistan_tm" translatable="false">Ashgabat</string>
+    <string name="ca_as_the_united_arab_emirates_ae" translatable="false">Abu Dhabi</string>
+    <string name="ca_as_uzbekistan_uz" translatable="false">Tashkent</string>
+    <string name="ca_as_vietnam_vn" translatable="false">Hanoi</string>
+    <string name="ca_as_yemen_ye" translatable="false">Sanaá</string>
 
     <!-- Capitals Europa -->
-    <string name="ca_eu_albania_al">Tirana</string>
-    <string name="ca_eu_andorra_ad">Andorra la Vella</string>
+    <string name="ca_eu_albania_al" translatable="false">Tirana</string>
+    <string name="ca_eu_andorra_ad" translatable="false">Andorra la Vella</string>
     <string name="ca_eu_austria_at">Vienna</string>
-    <string name="ca_eu_belarus_by">Minsk</string>
+    <string name="ca_eu_belarus_by" translatable="false">Minsk</string>
     <string name="ca_eu_belgium_be">Brussels</string>
-    <string name="ca_eu_bosnia_and_herzegovina_ba">Sarajevo</string>
-    <string name="ca_eu_bulgaria_bg">Sofia</string>
-    <string name="ca_eu_croatia_hr">Zagreb</string>
+    <string name="ca_eu_bosnia_and_herzegovina_ba" translatable="false">Sarajevo</string>
+    <string name="ca_eu_bulgaria_bg" translatable="false">Sofia</string>
+    <string name="ca_eu_croatia_hr" translatable="false">Zagreb</string>
     <string name="ca_eu_the_czech_republic_cz">Prague</string>
     <string name="ca_eu_denmark_dk">Copenhagen</string>
-    <string name="ca_eu_estonia_ee">Tallin</string>
+    <string name="ca_eu_estonia_ee" translatable="false">Tallin</string>
     <string name="ca_eu_finland_fi">Helsinki</string>
-    <string name="ca_eu_france_fr">Paris</string>
-    <string name="ca_eu_germany_de">Berlin</string>
+    <string name="ca_eu_france_fr" translatable="false">Paris</string>
+    <string name="ca_eu_germany_de" translatable="false">Berlin</string>
     <string name="ca_eu_greece_gr">Athens</string>
-    <string name="ca_eu_hungary_hu">Budapest</string>
-    <string name="ca_eu_iceland_is">Reykjavik</string>
-    <string name="ca_eu_ireland_ie">Dublin</string>
+    <string name="ca_eu_hungary_hu" translatable="false">Budapest</string>
+    <string name="ca_eu_iceland_is" translatable="false">Reykjavik</string>
+    <string name="ca_eu_ireland_ie" translatable="false">Dublin</string>
     <string name="ca_eu_italy_it">Rome</string>
-    <string name="ca_eu_kosovo_xk">Pristina</string>
-    <string name="ca_eu_latvia_lv">Riga</string>
-    <string name="ca_eu_liechtenstein_li">Vaduz</string>
-    <string name="ca_eu_lithuania_lt">Vilnius</string>
+    <string name="ca_eu_kosovo_xk" translatable="false">Pristina</string>
+    <string name="ca_eu_latvia_lv" translatable="false">Riga</string>
+    <string name="ca_eu_liechtenstein_li" translatable="false">Vaduz</string>
+    <string name="ca_eu_lithuania_lt" translatable="false">Vilnius</string>
     <string name="ca_eu_luxembourg_lu">Luxembourg City</string>
-    <string name="ca_eu_macedonia_mk">Skopje</string>
-    <string name="ca_eu_malta_mt">Valletta</string>
-    <string name="ca_eu_moldova_md">Chisinau</string>
-    <string name="ca_eu_monaco_mc">Monaco</string>
-    <string name="ca_eu_montenegro_me">Podgorica</string>
-    <string name="ca_eu_the_netherlands_nl">Amsterdam</string>
-    <string name="ca_eu_norway_no">Oslo</string>
+    <string name="ca_eu_macedonia_mk" translatable="false">Skopje</string>
+    <string name="ca_eu_malta_mt" translatable="false">Valletta</string>
+    <string name="ca_eu_moldova_md" translatable="false">Chisinau</string>
+    <string name="ca_eu_monaco_mc" translatable="false">Monaco</string>
+    <string name="ca_eu_montenegro_me" translatable="false">Podgorica</string>
+    <string name="ca_eu_the_netherlands_nl" translatable="false">Amsterdam</string>
+    <string name="ca_eu_norway_no" translatable="false">Oslo</string>
     <string name="ca_eu_poland_pl">Warsaw</string>
     <string name="ca_eu_portugal_pt">Lisbon</string>
     <string name="ca_eu_romania_ro">Bucharest</string>
     <string name="ca_eu_russia_ru">Moscow</string>
-    <string name="ca_eu_san_marino_sm">San Marino</string>
+    <string name="ca_eu_san_marino_sm" translatable="false">San Marino</string>
     <string name="ca_eu_serbia_rs">Belgrade</string>
-    <string name="ca_eu_slovakia_sk">Bratislava</string>
-    <string name="ca_eu_slovenia_si">Ljubljana</string>
-    <string name="ca_eu_spain_es">Madrid</string>
-    <string name="ca_eu_sweden_se">Stockholm</string>
-    <string name="ca_eu_switzerland_ch">Bern</string>
-    <string name="ca_eu_turkey_tr">Ankara</string>
-    <string name="ca_eu_ukraine_ua">Kiev</string>
-    <string name="ca_eu_the_united_kingdom_gb">London</string>
+    <string name="ca_eu_slovakia_sk" translatable="false">Bratislava</string>
+    <string name="ca_eu_slovenia_si" translatable="false">Ljubljana</string>
+    <string name="ca_eu_spain_es" translatable="false">Madrid</string>
+    <string name="ca_eu_sweden_se" translatable="false">Stockholm</string>
+    <string name="ca_eu_switzerland_ch" translatable="false">Bern</string>
+    <string name="ca_eu_turkey_tr" translatable="false">Ankara</string>
+    <string name="ca_eu_ukraine_ua" translatable="false">Kiev</string>
+    <string name="ca_eu_the_united_kingdom_gb" translatable="false">London</string>
     <string name="ca_eu_the_vatican_city_state_va">Vatican City</string>
 
     <!-- Capitals North America -->
-    <string name="ca_na_antigua_and_barbuda_ag">St. John\'s</string>
-    <string name="ca_na_the_bahamas_bs">Nassau</string>
-    <string name="ca_na_barbados_bb">Bridgetown</string>
-    <string name="ca_na_belize_bz">Belmopan</string>
-    <string name="ca_na_canada_ca">Ottawa</string>
-    <string name="ca_na_costa_rica_cr">San José</string>
+    <string name="ca_na_antigua_and_barbuda_ag" translatable="false">St. John\'s</string>
+    <string name="ca_na_the_bahamas_bs" translatable="false">Nassau</string>
+    <string name="ca_na_barbados_bb" translatable="false">Bridgetown</string>
+    <string name="ca_na_belize_bz" translatable="false">Belmopan</string>
+    <string name="ca_na_canada_ca" translatable="false">Ottawa</string>
+    <string name="ca_na_costa_rica_cr" translatable="false">San José</string>
     <string name="ca_na_cuba_cu">Havana</string>
-    <string name="ca_na_dominica_dm">Roseau</string>
-    <string name="ca_na_the_dominican_republic_do">Santo Domingo</string>
-    <string name="ca_na_el_salvador_sv">San Salvador</string>
-    <string name="ca_na_grenada_gd">St. George\'s</string>
-    <string name="ca_na_guatemala_gt">Guatemala City</string>
-    <string name="ca_na_haiti_ht">Port-au-Prince</string>
-    <string name="ca_na_honduras_hn">Tegucigalpa</string>
-    <string name="ca_na_jamaica_jm">Kingston</string>
-    <string name="ca_na_mexico_mx">Mexico City</string>
-    <string name="ca_na_nicaragua_ni">Managua</string>
-    <string name="ca_na_panama_pa">Panama City</string>
-    <string name="ca_na_saint_kitts_and_nevis_kn">Basseterre</string>
-    <string name="ca_na_saint_lucia_lc">Castries</string>
-    <string name="ca_na_saint_vincent_and_the_grenadines_vc">Kingstown</string>
-    <string name="ca_na_trinidad_and_tobago_tt">Port of Spain</string>
+    <string name="ca_na_dominica_dm" translatable="false">Roseau</string>
+    <string name="ca_na_the_dominican_republic_do" translatable="false">Santo Domingo</string>
+    <string name="ca_na_el_salvador_sv" translatable="false">San Salvador</string>
+    <string name="ca_na_grenada_gd" translatable="false">St. George\'s</string>
+    <string name="ca_na_guatemala_gt" translatable="false">Guatemala City</string>
+    <string name="ca_na_haiti_ht" translatable="false">Port-au-Prince</string>
+    <string name="ca_na_honduras_hn" translatable="false">Tegucigalpa</string>
+    <string name="ca_na_jamaica_jm" translatable="false">Kingston</string>
+    <string name="ca_na_mexico_mx" translatable="false">Mexico City</string>
+    <string name="ca_na_nicaragua_ni" translatable="false">Managua</string>
+    <string name="ca_na_panama_pa" translatable="false">Panama City</string>
+    <string name="ca_na_saint_kitts_and_nevis_kn" translatable="false">Basseterre</string>
+    <string name="ca_na_saint_lucia_lc" translatable="false">Castries</string>
+    <string name="ca_na_saint_vincent_and_the_grenadines_vc" translatable="false">Kingstown</string>
+    <string name="ca_na_trinidad_and_tobago_tt" translatable="false">Port of Spain</string>
     <string name="ca_na_the_united_states_us">Washington</string>
 
     <!-- Capitals South America -->
-    <string name="ca_sa_argentina_ar">Buenos Aires</string>
-    <string name="ca_sa_bolivia_bo">Sucre</string>
-    <string name="ca_sa_brazil_br">Brasilia</string>
-    <string name="ca_sa_chile_cl">Santiago</string>
-    <string name="ca_sa_colombia_co">Bogotá</string>
-    <string name="ca_sa_ecuador_ec">Quito</string>
-    <string name="ca_sa_guyana_gy">Georgetown</string>
-    <string name="ca_sa_paraguay_py">Asunción</string>
-    <string name="ca_sa_peru_pe">Lima</string>
-    <string name="ca_sa_suriname_sr">Paramaribo</string>
-    <string name="ca_sa_trinidad_and_tobago_tt">Port of Spain</string>
-    <string name="ca_sa_uruguay_uy">Montevideo</string>
-    <string name="ca_sa_venezuela_ve">Caracas</string>
+    <string name="ca_sa_argentina_ar" translatable="false">Buenos Aires</string>
+    <string name="ca_sa_bolivia_bo" translatable="false">Sucre</string>
+    <string name="ca_sa_brazil_br" translatable="false">Brasilia</string>
+    <string name="ca_sa_chile_cl" translatable="false">Santiago</string>
+    <string name="ca_sa_colombia_co" translatable="false">Bogotá</string>
+    <string name="ca_sa_ecuador_ec" translatable="false">Quito</string>
+    <string name="ca_sa_guyana_gy" translatable="false">Georgetown</string>
+    <string name="ca_sa_paraguay_py" translatable="false">Asunción</string>
+    <string name="ca_sa_peru_pe" translatable="false">Lima</string>
+    <string name="ca_sa_suriname_sr" translatable="false">Paramaribo</string>
+    <string name="ca_sa_trinidad_and_tobago_tt" translatable="false">Port of Spain</string>
+    <string name="ca_sa_uruguay_uy" translatable="false">Montevideo</string>
+    <string name="ca_sa_venezuela_ve" translatable="false">Caracas</string>
 
     <!-- Capitals Oceania -->
-    <string name="ca_oc_australia_au">Canberra</string>
-    <string name="ca_oc_cook_islands_ck">Avarua</string>
-    <string name="ca_oc_east_timor_tl">Dili</string>
-    <string name="ca_oc_fiji_fj">Suva</string>
-    <string name="ca_oc_indonesia_id">Jakarta</string>
-    <string name="ca_oc_kiribati_ki">South Tarawa</string>
-    <string name="ca_oc_the_marshall_islands_mh">Majuro</string>
-    <string name="ca_oc_micronesia_fm">Palikir</string>
-    <string name="ca_oc_nauru_nr">Yaren District</string>
-    <string name="ca_oc_new_zealand_nz">Wellington</string>
-    <string name="ca_oc_niue_nu">Alofi</string>
-    <string name="ca_oc_palau_pw">Ngerulmud</string>
-    <string name="ca_oc_papua_new_guinea_pg">Port Moresby</string>
-    <string name="ca_oc_samoa_ws">Apia</string>
-    <string name="ca_oc_the_solomon_islands_sb">Honiara</string>
-    <string name="ca_oc_tonga_to">Nuku\'alofa</string>
-    <string name="ca_oc_tuvalu_tv">Funafuti</string>
-    <string name="ca_oc_vanuatu_vu">Port Vila</string>
+    <string name="ca_oc_australia_au" translatable="false">Canberra</string>
+    <string name="ca_oc_cook_islands_ck" translatable="false">Avarua</string>
+    <string name="ca_oc_east_timor_tl" translatable="false">Dili</string>
+    <string name="ca_oc_fiji_fj" translatable="false">Suva</string>
+    <string name="ca_oc_indonesia_id" translatable="false">Jakarta</string>
+    <string name="ca_oc_kiribati_ki" translatable="false">South Tarawa</string>
+    <string name="ca_oc_the_marshall_islands_mh" translatable="false">Majuro</string>
+    <string name="ca_oc_micronesia_fm" translatable="false">Palikir</string>
+    <string name="ca_oc_nauru_nr" translatable="false">Yaren District</string>
+    <string name="ca_oc_new_zealand_nz" translatable="false">Wellington</string>
+    <string name="ca_oc_niue_nu" translatable="false">Alofi</string>
+    <string name="ca_oc_palau_pw" translatable="false">Ngerulmud</string>
+    <string name="ca_oc_papua_new_guinea_pg" translatable="false">Port Moresby</string>
+    <string name="ca_oc_samoa_ws" translatable="false">Apia</string>
+    <string name="ca_oc_the_solomon_islands_sb" translatable="false">Honiara</string>
+    <string name="ca_oc_tonga_to" translatable="false">Nuku\'alofa</string>
+    <string name="ca_oc_tuvalu_tv" translatable="false">Funafuti</string>
+    <string name="ca_oc_vanuatu_vu" translatable="false">Port Vila</string>
 
     <!-- Math -->
 
